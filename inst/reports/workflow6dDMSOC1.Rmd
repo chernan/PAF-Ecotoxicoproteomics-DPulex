@@ -1,0 +1,288 @@
+Report for data : Label Free (non paired)
+========================================================
+
+```{r loaddata, echo=FALSE}
+outFolder <- paste(
+    c('../..', '/outputs/0.05/dpulex6dDMSOC1/vsn_lpe'),
+    collapse='')
+tempOutputFull <- paste(
+    c(outFolder, '/MaxQuant_LFQ_non-linked_vsnlpe_full.csv'), 
+    collapse='')
+data_proteins <- read.table(tempOutputFull, stringsAsFactors=FALSE, 
+                            row.names=NULL, header=TRUE)
+
+h_norm <- c("LFQ.intensity.DMSO.6d.K.1", "LFQ.intensity.DMSO.7d.L.1", 
+            "LFQ.intensity.Tamox.C1.7d.O.1", "LFQ.intensity.Tamox.C1.7d.P.1")
+
+h_peptides <- "Peptides"
+h_PEP <- "MaxQuant_PEP"
+h_ratio <- "Log2.fold_change."
+h_ttpval <- "p.value" 
+h_ttFDR <- "p.value_BH_corrected"
+
+# data_result <- MaxQuantOutput(folder=intput_folder)
+# data_params <- loadParametersData(data_result)
+
+nb_prot <- nrow(data_proteins)
+threshold_pval <- 0.05
+
+suppressPackageStartupMessages(library("vsn"))
+suppressPackageStartupMessages(library(googleVis))
+```
+
+Report for LFQ data, loaded from file : `r tempOutputFull`
+
+This analysis was performed at the Protein Analysis facility of the University of Lausanne (Switzerland), using the R language (see [reference 1](#Ref1)) on the `r format(Sys.time(), "%d/%m/%Y %H:%M:%S")`.
+
+For any further information, please contact us : wwwpaf@unil.ch
+
+
+Experimental design
+-------------------------
+
+Experiment | Type
+---------- | ----------
+1 | DMSO (Control)
+2 | DMSO (Control)
+3 | C1 (Concentration 1)
+4 | C1 (Concentration 1)
+
+MaxQuant version 1.3.0.5 was used to compute intensities for each experiment/replicate, with database 'C:\MaxQuant\New-fasta\uniprot_Dpulex_20120613.fasta'.
+See [reference 2](#Ref2).
+
+Preliminary filter
+--------------------------
+
+Each reported intensity used to calculate a fold change should have been computed from at least one peptide (count). 
+Proteins should appear in all replicates/channels.
+
+
+Ratio distribution
+-------------------------
+
+```{r citationVSN, echo=FALSE, warning=FALSE}
+vsn_citation <- citation("vsn")
+vsn_description <- packageDescription("vsn")
+```
+Normalization was achieved using the Variance Stabilizing method (R package version `r vsn_description$Version`). 
+It applies a generalized log2 (glog2) transformation on intensities. See [reference 3](#Ref3).
+
+
+Output of normalization
+
+```{r violinplot, echo=FALSE, fig.width=10, fig.height=7}
+suppressPackageStartupMessages(library("ggplot2"))
+matrixdata <- as.matrix(data_proteins[,h_norm])
+
+# Stack data by pasting column after column
+data.stacked <- c(matrixdata)
+
+row.names <- row.names(data_proteins)
+col.names <- h_norm
+numprots <- length(row.names)
+num.cond <- 2
+num.replicates <- ncol(matrixdata)/num.cond
+numallexp <- num.cond * num.replicates
+
+intensitiesdf <- data.frame(
+    Intensities = data.stacked,
+    Protein.groups = factor(rep(row.names, numallexp)),
+    Reporters = factor( rep(col.names, rep(c(numprots), numallexp)) ),
+    Conditions = factor( rep(c("Control", "Exp"), c(numprots*num.replicates, numprots*num.replicates)) )
+    )
+
+p <- ggplot(data=intensitiesdf, aes(x=Reporters, y=Intensities)) 
+p + geom_violin(scale = "count", mapping=aes(fill = Conditions, ylab='glog2( Intensities )'), trim=TRUE, alpha=.75) +
+    stat_summary(aes(group=Reporters), fun.y=mean, fun.ymin=min, fun.ymax=max, fill="red", shape=21, size=1) +
+    ylab('glog2( Intensities )') +
+    xlab('') +
+    theme(legend.position="bottom")
+
+
+```
+Clustering of the replicates / conditions after normalization
+
+```{r clusterplot, echo=FALSE, fig.width=8, fig.height=8}
+suppressPackageStartupMessages(library(latticeExtra))
+#NB: dist computes distances between rows, so we have to transpose data to compute distances between samples
+distances <- as.matrix(dist(t(data_proteins[,h_norm]), method="euclidean"))
+
+distances.row <- as.dendrogram(hclust(as.dist(distances)))
+row.ordered <- order.dendrogram(distances.row)
+legend <- list(
+    top=list(
+        fun=dendrogramGrob,
+        args=list(x=distances.row, side="top"))
+    )
+levelplot(distances[row.ordered, row.ordered],
+          scales=list(x=list(rot=90)), 
+          xlab='',
+          ylab='',
+          legend=legend,
+          main="Heatmap")
+
+```
+
+Fold change was computed as follow : 
+> Fc = median(3:C1,4:C1)/median(1:DMSO,2:DMSO)
+
+```{r echo=FALSE, warning=FALSE}
+#$Ratio=\frac{median(113,114,115,116)}{median(117,118,119,121)}$ 
+```
+
+Plot of fold change as function of number of peptides (decreasing).
+
+```{r ratiosplot, echo=FALSE, fig.width=14, fig.height=10}
+order_peptides <- order(data_proteins[,h_peptides], decreasing=TRUE)
+data_proteins <- data_proteins[order_peptides, ]
+is_tt_sig <- as.numeric(data_proteins[,h_ttpval]) < threshold_pval
+is_BH_sig <- as.numeric(data_proteins[,h_ttFDR]) < threshold_pval
+range_y <- range(data_proteins[,h_ratio])
+
+plot(c(1:nb_prot), data_proteins[,h_ratio], 
+     main="Fold changes",
+     xlab="Index Peptides (decreasing)", 
+     ylab="Log2(Fold change)",
+     pch=16,
+     col="gray")
+grid(col="lightgrey")
+abline(h=0)
+abline(h=median(data_proteins[,h_ratio]), col="blue", lty=2)
+
+points(c(1:nb_prot)[is_tt_sig], data_proteins[is_tt_sig,h_ratio], pch=16, col="darkorange")
+text(c(1:nb_prot)[is_tt_sig], data_proteins[is_tt_sig,h_ratio], data_proteins[is_tt_sig,1], cex=0.7, pos=4, col="darkorange")
+if(length(is_BH_sig[is_BH_sig == TRUE])>0) {
+    points(c(1:nb_prot)[is_BH_sig], data_proteins[is_BH_sig,h_ratio], pch=16, col="darkred")
+    text(c(1:nb_prot)[is_BH_sig], data_proteins[is_BH_sig,h_ratio], data_proteins[is_BH_sig,1], cex=0.7, pos=4, col="darkred")
+}
+
+legend(0, range_y[2], 
+       legend=c("Non significant", "LPE significant", "LPE&BH significant", "Median of Fold changes"), 
+       col=c("gray", "darkorange", "darkred", "blue"),
+       fill=c("gray", "darkorange", "darkred", 0),
+       border=c("gray", "gray", "gray", 0),
+       lty = c(0, 0, 0, 2),
+       merge = TRUE)
+```
+
+
+--------------------------------------------------------------------------------------------------------
+
+Significantly different proteins
+--------------------------------------------------------------------------------------------------------
+
+```{r citationLPE, echo=FALSE, warning=FALSE}
+lpe_citation <- citation("LPE")
+```
+Data analysis was performed using Local-Pooled-Error method (`r lpe_citation$note` - see [reference 4](#Ref4).
+Benjamini-Hochberg method was chosen for multiple testing correction (see [reference 5](#Ref5)).
+
+```{r prepplotT, echo=FALSE}
+# Without Benjamini-Hochberg correction
+order_pep <- order(data_proteins[,h_PEP], decreasing=FALSE)
+data_proteins <- data_proteins[order_pep, ]
+is_tt_sig <- as.numeric(data_proteins[,h_ttpval]) < threshold_pval
+is_BH_sig <- as.numeric(data_proteins[,h_ttFDR]) < threshold_pval
+```
+
+```{r volcanoplotT2, echo=FALSE, fig.width=14, fig.height=10}
+
+pvals <- data_proteins[,h_ttpval]
+pvals.correct <- data_proteins[,h_ttFDR]
+foldchange <- data_proteins[,h_ratio]
+ids <- data_proteins[,1]
+
+plot( foldchange, -log2(pvals),
+      main="Volcano plot", sub=paste("(threshold p-value = ",threshold_pval,")"),
+      xlab="log2( Fold change )", 
+      ylab="-log2( p-value )",
+      col="gray", 
+      pch=16, cex.lab = 1, cex.axis = 1, cex.main = 1)
+grid(col="lightgray")
+sd_foldchange <- sd(foldchange)
+abline(v=c(c(-2,-1,0,1,2)*sd_foldchange), col="gray", lty=2)
+
+is_test_sig <- as.numeric(pvals) < threshold_pval
+abline( h=-log2(threshold_pval), col="orange", lty=2)
+points( foldchange[is_test_sig], -log2(pvals[is_test_sig]), pch=16, col="darkorange")
+# text( foldchange[is_test_sig], -log2(pvals[is_test_sig]), rownames(matrixdata)[is_test_sig], cex=0.7, pos=4, col="darkorange")
+
+is_corrected_sig <- pvals.correct < threshold_pval
+if(length( which(is_corrected_sig == TRUE) ) >0) {
+    order.pvals <- order(pvals, decreasing=FALSE)
+    reordered.foldchange <- foldchange[order.pvals]
+    reordered.pvals <- pvals[order.pvals]
+    reordered.pvals.correct <- pvals.correct[order.pvals]
+    reordered.ids <- ids[order.pvals]
+    is_corrected_sig <- reordered.pvals.correct < threshold_pval
+    
+    max.pvalcorrect <- max(reordered.pvals.correct[is_corrected_sig])
+    ind.maxpval <- which(reordered.pvals.correct[is_corrected_sig]==max.pvalcorrect,arr.ind=TRUE)
+    abline( h=-log2( max(reordered.pvals[ ind.maxpval ]) ), col="red", lty=2)
+    points( reordered.foldchange[is_corrected_sig], -log2(reordered.pvals[is_corrected_sig]), pch=16, col="darkred")
+    text( reordered.foldchange[is_corrected_sig], -log2(reordered.pvals[is_corrected_sig]), reordered.ids[is_corrected_sig], cex=0.7, pos=4, col="darkred")
+}
+
+legend("top", 
+       legend=c("Non significant", "Non corrected", "Significant after correction", paste("Non-corrected threshold"), paste("Corrected threshold (FDR=",threshold_pval,")")), 
+       col=c("gray", "darkorange", "darkred", "orange", "red"),
+       fill=c("gray", "darkorange", "darkred", 0, 0),
+       border=c("gray", "gray", "gray", 0, 0),
+       lty = c(0, 0, 0, 2, 2),
+       merge = TRUE,
+       cex = 0.8)
+```
+
+--------------------------------------------------------------------------------------
+
+Without multiple testing correction, <b>`r length(which(is_tt_sig == TRUE))`</b> significant protein groups were found, with a p-value inferior to `r threshold_pval`.
+
+After Benjamini-Hochberg correction of the p-values, <b>`r length(which(is_BH_sig == TRUE))`</b> significant protein groups were found, on a total of `r length(as.numeric(data_proteins[,1]))`, with an FDR of `r threshold_pval`.
+
+
+> Please note that, even if some proteins appear as significant with 1 peptide count, most of the scientific journals require a minimum of 2 peptides per identified protein.
+
+
+--------------------------------------------------------------------------------------
+
+```{r ttesttable, echo=FALSE, results='asis'}
+RatiosTable <- gvisTable(data.frame(IDs=ids[is_tt_sig],
+    data_proteins[is_tt_sig, 
+                  c("UniProt_IDs", "Fasta_headers", "MaxQuant_PEP", "Peptides", 
+                    "Log2.fold_change.", "p.value_BH_corrected",
+                    "Outlier_Ctrl", "Outlier_Exp")]), 
+    options = list(width = 1400, height = 1500))
+
+print(RatiosTable, "chart")
+```
+
+--------------------------------------------------------------------------------------
+
+Description of the 'final' table
+--------------------------------------------------------------------------------------------------------
+
+Header | Description
+------------- | -------------
+Protein names | General description of proteins, as found in the UniProtKB database. There can be multiple protein names (= a protein group), as the analysis is sometimes not able to determine uniquely a protein given a set of identified peptides.
+UniProt IDs | Identifiers for proteins, as defined in the UniProtKB database. Users can go to the [UniProt website](http://www.uniprot.org/uniprot/) and search for these IDs to have more details on the identified proteins. 
+Peptides | Number of peptides used for the identification of a protein group.
+MaxQuant PEP | Score of the protein identification, as computed by MaxQuant.
+Log2(Fold change) | Relative abundance of the protein.
+p-value | Probability of the observations for a given protein, if we would suppose that "there is no change between the conditions". The smaller the p-value, the more confidence we can put in rejecting this supposition.
+p-value BH corrected | When a lot of p-values are computed, they have to be corrected for the False Discovery Rate (Type I error). Benjamini-Hochberg correction was used in this analysis. **Proteins whose expression changes significatively should have a corrected p-value between 0 and a decided threshold (`r threshold_pval` in this analysis).** 
+
+
+
+
+***************************************************************************************
+
+> <a id="Ref1">**1.**</a> Please cite the R Project using : `r r_citation <- citation();r_citation$textVersion`
+>
+> <a id="Ref2">**2.**</a> MaxQuant software : published in MaxQuant enables high peptide identification rates, individualized p.p.b.-range mass accuracies and proteome-wide protein quantification by Jürgen Cox & Matthias Mann (2008)
+> 
+> <a id="Ref3">**3.**</a> R package for VSN : published in `r vsn_citation$title` by `r vsn_citation$author`
+>
+> <a id="Ref4">**4.**</a> R package for LPE : published in `r lpe_citation$title` by `r lpe_citation$author`
+> 
+> <a id="Ref5">**5.**</a> Benjamini-Hochberg correction : published in "Controlling the false discovery rate: a practical and powerful approach to multiple testing" by Yoav Benjamini & Yosef Hochberg (1995)
+

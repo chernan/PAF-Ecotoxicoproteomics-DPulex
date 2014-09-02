@@ -1,0 +1,214 @@
+Compare similarity between profiles of significant proteins
+======================================================================
+    
+```{r setup, echo=FALSE}
+projectDir <- '/home/chernan/Workspace/DataAnalysis/2013_03_DaphniaPulex'
+setwd(projectDir)
+suppressPackageStartupMessages(library(Prots4Prots))
+suppressPackageStartupMessages(source(paste0(projectDir, "/R/load_data.R")))
+
+## To avoid transformation of small numbers into scientific notation causing incompatibilities with further sorting methods (googleVis by ex.)
+# oldScipen <- options(scipen=500)
+```
+
+
+```{r getdataset, echo=FALSE}
+## First we set up which dataset we want to analyze.
+dataset_list <- getDatasetDpulex246daysDMSOM4pg(projectDir)
+
+threshold_pval <- 0.05
+
+methods.to.report <- list(
+    Normalization = c("vsn"), 
+    Summary = c("NonA"), 
+    Significance = c("lpe"), 
+    Dataset = c("dpulex2dDMSOM4", "dpulex4dDMSOM4", "dpulex6dDMSOM4")
+)
+dataset.names <- methods.to.report$Dataset
+```
+
+```{r compareAll, echo=FALSE}
+## Then we read all results files and create a summary table.
+basedir <- paste0(projectDir, '/outputs')
+
+combined_methods.to.report <- as.matrix(expand.grid(methods.to.report))
+# method.label <- paste(combined_methods.to.report[1,c(1,3)], collapse='_')
+# dataset.label <- 'dpulex6dDMSOM4'
+
+temp.df <- apply(combined_methods.to.report, 1, FUN = function(methods) {
+    
+    method.label <- paste(c(methods["Normalization"], methods["Significance"]), 
+                          collapse='_')
+    dataset.label <- methods["Dataset"]
+    
+    prot.names <- fData(
+        dataset_list[[dataset.label]]$dataset)[, c("Majority.protein.IDs", 
+                                                   "Fasta.headers")]
+    
+    normFiles <- dir(
+        paste(c(basedir, '/', threshold_pval, '/', dataset.label, '/', 
+                method.label, '/temp'), 
+              collapse=''), 
+        pattern="all_tests_normalization_Rmd_data_20.*txt", 
+        full.names=TRUE)
+    time.out.order <- order(file.info(normFiles)[["mtime"]], decreasing = TRUE)
+    normalizedData <- read.table(normFiles[time.out.order[1]],
+                               stringsAsFactors=FALSE, header=TRUE, quote='"', row.names=NULL)
+    selectedLines <- as.numeric(normalizedData[, "row.names"])
+
+    output.files <- dir(
+        paste(c(basedir, '/', threshold_pval, '/', dataset.label, '/', 
+                method.label, '/temp'), 
+              collapse=''), 
+        pattern="all_tests_mtc_Rmd_data_20.*txt", 
+        full.names=TRUE)
+    time.out.order <- order(file.info(output.files)[["mtime"]], decreasing = TRUE)
+    pvalues.data <- read.table(output.files[time.out.order[1]],
+                               stringsAsFactors=FALSE, header=TRUE, quote='"')
+    
+    temp.fc <- data.frame(fold.change=pvalues.data[["fold.change"]])
+    
+    if(methods["Significance"]=='samr') {
+        temp.fc[(pvalues.data[["significant"]] == "STABLE"),] <- NA
+    }
+    else {
+        temp.fc[(pvalues.data[["p.values.corrected"]] > threshold_pval),] <- NA
+    }
+    return.val <- data.frame(temp.fc, prot.names[selectedLines, ])
+    
+    return(return.val)
+})
+all.prot.names <- unique(unlist(lapply(temp.df,'[[',"Majority.protein.IDs")))
+all.prot.fasta <- unique(unlist(lapply(temp.df,'[[',"Fasta.headers")))
+
+## Merge results for all datasets
+signif.df <- data.frame(all.prot.names, all.prot.fasta)
+for(index.res in 1:length(temp.df)) {
+    df.res <- temp.df[[index.res]]
+    signif.df <- merge(signif.df, df.res, by.x='all.prot.names', by.y="Majority.protein.IDs", all.x=TRUE, suffixes=c('',index.res))
+}
+df.res <- signif.df[, c("all.prot.names", 
+                        "all.prot.fasta", 
+                        names(signif.df)[grepl(x=names(signif.df), pattern="fold.change")])
+                    ]
+names(df.res) <- c("Majority.protein.IDs","Fasta.headers", dataset.names)
+whichok.pg <- apply(df.res, 1, FUN=function(x){any(!is.na(x[3:8]))})
+significant.results <- df.res[whichok.pg,]
+significant.results[is.na(significant.results)] <- 0
+
+# suppressPackageStartupMessages(library("biomaRt"))
+# uniProt <- useMart(biomart='unimart', dataset='uniprot')
+# apply(significant.results, 1, FUN=function(signifProt) {
+#     majPIDs <- as.character(signifProt["Majority.protein.IDs"])
+#     arrayIDs <- unlist(strsplit(majPIDs, split=";"))
+#     if( length(arrayIDs)<2) {
+#         return(c("OneProt", arrayIDs))
+# #         GO_IDs <- getBM(attributes=c("name", "accession", "go_id", "go_name"), 
+# #                         values=allACs, 
+# #                         filter="accession", mart=uniProt)        
+#     }
+#     else {
+#         return(c("ProteinGroup", majPIDs))
+#     }
+# })
+
+write.table(significant.results, paste0(basedir, "/significantResultsDMSOM4.csv"))
+```
+
+Compare time points
+--------------------------------------------------------------------------------
+
+For each triplet normalization+summarization+statistic, we first explore the similarity between profiles of significant proteins.
+We first extract significant proteins, for each triplet, and summarize the information in one table.
+NAs (proteins not significantly differentially expressed for a given triplet, but significant in at least one other triplet) are replaced by 0, which is of no weight while computing manhattan distances.
+
+How similar are the significant sets of proteins ?
+
+
+Similarities between results.
+
+```{r, echo=FALSE}
+distances <- as.matrix(dist(t(significant.results[,dataset.names]), method="euclidean"))
+if(!any(is.na(distances))) {
+    plot <- displayHeatmap(dataset=significant.results[,dataset.names], 
+                           distMethod="euclidean", title="DMSO/M4")
+    print(plot)
+}
+```
+
+Principal Component Analysis.
+
+```{r, echo=FALSE}
+norm.colors <- rep("black", length(dataset.names))
+# norm.colors[grepl("DMSO", names(significant.results[,dataset.names]))] <- "red"
+# norm.colors[grepl("C2", names(significant.results[,dataset.names]))] <- "darkred"
+# norm.colors[grepl("M4", names(significant.results[,dataset.names]))] <- "orange"
+
+stat.pch <- rep(0, length(dataset.names))
+stat.pch[grepl("dpulex2d", names(significant.results[,dataset.names]))] <- 8 #star
+stat.pch[grepl("dpulex4d", names(significant.results[,dataset.names]))] <- 17 #triangle
+stat.pch[grepl("dpulex6d", names(significant.results[,dataset.names]))] <- 15 #square
+
+pca.obj <- prcomp(t(significant.results[,dataset.names]))
+plot(pca.obj$x[,1], pca.obj$x[,2], col=norm.colors, pch=stat.pch, xlab="PC1", ylab="PC2")
+abline(v=0, h=0)
+```
+
+Compare proteins
+--------------------------------------------------------------------------------
+
+How similar are the significant sets of proteins ?
+
+```{r, fig.width=15, fig.height=25}
+data <- data.frame(significant.results[,dataset.names],
+                   row.names=significant.results$Majority.protein.IDs)
+distances <- as.matrix(dist(data), method="euclidean")
+dendrogram1 <- as.dendrogram(hclust(as.dist(distances)))
+plot(dendrogram1, nodePar=list(lab.cex=0.7), horiz = TRUE,)
+```
+
+Principal Component Analysis.
+
+```{r, echo=FALSE, fig.width=10, fig.height=10}
+norm.colors <- rep("black", length(significant.results))
+# norm.colors[grepl("DMSO", names(significant.results[,dataset.names]))] <- "red"
+# norm.colors[grepl("C2", names(significant.results[,dataset.names]))] <- "darkred"
+# norm.colors[grepl("M4", names(significant.results[,dataset.names]))] <- "orange"
+
+stat.pch <- rep(16, length(significant.results))
+# stat.pch[grepl("dpulex2d", names(significant.results[,dataset.names]))] <- 8 #star
+# stat.pch[grepl("dpulex4d", names(significant.results[,dataset.names]))] <- 17 #triangle
+# stat.pch[grepl("dpulex6d", names(significant.results[,dataset.names]))] <- 15 #square
+
+interestingAll <- c("E9FYW4")
+interesting12 <- c("E9FUS8;E9GPW3;E9G035", "E9FUY9", "E9GNX8", 
+                 "E9GU31", "E9H3K4", "E9HU52", "E9I1Y4;E9GNN6;E9I1P7")
+interesting23 <- c("E9FUS9;E9GPW4", "E9G153", "E9G4S2", "E9GCX4", "E9GQQ2", 
+                 "E9H1D6", "E9H9N3")
+pca.obj <- prcomp(significant.results[, dataset.names])
+
+plot(pca.obj$x[,1], pca.obj$x[,2], col=norm.colors, pch=stat.pch, xlab="PC1", ylab="PC2")
+abline(v=0, h=0)
+isInteresting12 <- significant.results$Majority.protein.IDs %in% c(interestingAll, interesting12)
+text(pca.obj$x[isInteresting12, 1], pca.obj$x[isInteresting12, 2], 
+     labels=significant.results$Majority.protein.IDs[isInteresting12], 
+     col="red", pos=3, cex=0.8)
+
+
+isInteresting23 <- significant.results$Majority.protein.IDs %in% c(interestingAll, interesting23)
+plot(pca.obj$x[,2], pca.obj$x[,3], col=norm.colors, pch=stat.pch, xlab="PC2", ylab="PC3")
+abline(v=0, h=0)
+text(pca.obj$x[isInteresting23, 2], pca.obj$x[isInteresting23, 3], 
+     labels=significant.results$Majority.protein.IDs[isInteresting23], 
+     col="red", pos=4, cex=0.8)
+```
+
+Interesting proteins are:
+```{r, echo=FALSE, results='asis'}
+suppressPackageStartupMessages(library(googleVis))
+interestTable <- gvisTable(
+    significant.results[isInteresting12 | isInteresting23, 
+                        c("Majority.protein.IDs", dataset.names, "Fasta.headers")], 
+    options = list(width = 1400, height = 500))
+print(interestTable, "chart")
+```
