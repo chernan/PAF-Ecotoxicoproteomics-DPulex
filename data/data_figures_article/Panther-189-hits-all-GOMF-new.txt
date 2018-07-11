@@ -1,0 +1,164 @@
+Molecular Function	Daphnia pulex - REFLIST (30118)	IDs-189-hits.txt (180)	IDs-189-hits.txt (expected)	IDs-189-hits.txt (over/under)	IDs-189-hits.txt (P-value)
+Unclassified	21400	48	127.9	-	1.71E-32
+catalytic activity	5055	91	30.21	+	4.08E-23
+oxidoreductase activity	760	33	4.54	+	1.03E-16
+structural constituent of ribosome	196	14	1.17	+	3.60E-09
+structural molecule activity	1124	27	6.72	+	1.51E-07
+binding	3843	52	22.97	+	1.29E-06
+aminoacyl-tRNA ligase activity	35	6	0.21	+	1.42E-05
+translation regulator activity	129	9	0.77	+	1.77E-05
+"translation factor activity, nucleic acid binding"	132	9	0.79	+	2.14E-05
+lyase activity	183	10	1.09	+	3.24E-05
+RNA binding	544	16	3.25	+	3.61E-05
+ligase activity	321	12	1.92	+	1.08E-04
+isomerase activity	142	8	0.85	+	4.39E-04
+translation initiation factor activity	105	7	0.63	+	6.31E-04
+transferase activity	1371	23	8.19	+	1.38E-03
+nucleic acid binding	2473	33	14.78	+	1.73E-03
+actin binding	236	8	1.41	+	1.59E-02
+structural constituent of cytoskeleton	650	13	3.88	+	2.63E-02
+racemase and epimerase activity	45	4	0.27	+	2.70E-02
+acetyltransferase activity	89	5	0.53	+	3.45E-02
+"transferase activity, transferring acyl groups"	148	6	0.88	+	4.66E-02
+hydro-lyase activity	62	4	0.37	+	9.00E-02
+cytoskeletal protein binding	314	8	1.88	+	1.06E-01
+calcium ion binding	180	6	1.08	+	1.29E-01
+amino acid transmembrane transporter activity	84	4	0.5	+	2.74E-01
+translation elongation factor activity	40	3	0.24	+	2.97E-01
+protein binding	1660	19	9.92	+	8.26E-01
+calmodulin binding	119	4	0.71	+	9.39E-01
+cation transmembrane transporter activity	256	4	1.53	+	1.00E+00
+G-protein coupled receptor activity	224	0	1.34	-	1.00E+00
+glucosidase activity	20	0	0.12	-	1.00E+00
+transaminase activity	28	1	0.17	+	1.00E+00
+galactosidase activity	10	0	0.06	-	1.00E+00
+lipid binding	11	0	0.07	-	1.00E+00
+DNA ligase activity	1	0	0.01	-	1.00E+00
+cytokine receptor activity	4	0	0.02	-	1.00E+00
+extracellular matrix structural constituent	103	0	0.62	-	1.00E+00
+exoribonuclease activity	49	0	0.29	-	1.00E+00
+"ATPase activity, coupled to transmembrane movement of substances"	58	2	0.35	+	1.00E+00
+growth factor activity	13	0	0.08	-	1.00E+00
+phosphoric diester hydrolase activity	24	0	0.14	-	1.00E+00
+sequence-specific DNA binding transcription factor activity	911	3	5.44	-	1.00E+00
+exodeoxyribonuclease activity	7	0	0.04	-	1.00E+00
+phosphoprotein phosphatase activity	112	0	0.67	-	1.00E+00
+endoribonuclease activity	82	0	0.49	-	1.00E+00
+endodeoxyribonuclease activity	94	0	0.56	-	1.00E+00
+ligand-gated ion channel activity	245	2	1.46	+	1.00E+00
+ligand-activated sequence-specific DNA binding RNA polymerase II transcription factor activity	25	0	0.15	-	1.00E+00
+calcium-dependent phospholipid binding	71	0	0.42	-	1.00E+00
+non-membrane spanning protein tyrosine kinase activity	55	0	0.33	-	1.00E+00
+transmembrane receptor protein tyrosine kinase activity	6	0	0.04	-	1.00E+00
+hydrogen ion transmembrane transporter activity	29	1	0.17	+	1.00E+00
+nuclease activity	319	0	1.91	-	1.00E+00
+receptor activity	933	3	5.58	-	1.00E+00
+glutamate receptor activity	156	0	0.93	-	1.00E+00
+transmembrane receptor protein serine/threonine kinase activity	6	0	0.04	-	1.00E+00
+protein kinase activity	308	0	1.84	-	1.00E+00
+lipase activity	53	1	0.32	+	1.00E+00
+acetylcholine receptor activity	27	0	0.16	-	1.00E+00
+cysteine-type endopeptidase inhibitor activity	15	0	0.09	-	1.00E+00
+serine-type endopeptidase inhibitor activity	43	0	0.26	-	1.00E+00
+GABA receptor activity	27	0	0.16	-	1.00E+00
+"proton-transporting ATP synthase activity, rotational mechanism"	13	1	0.08	+	1.00E+00
+DNA polymerase processivity factor activity	1	0	0.01	-	1.00E+00
+enzyme inhibitor activity	170	0	1.02	-	1.00E+00
+transmembrane transporter activity	1210	13	7.23	+	1.00E+00
+deaminase activity	28	1	0.17	+	1.00E+00
+SNAP receptor activity	17	0	0.1	-	1.00E+00
+centromeric DNA binding	43	0	0.26	-	1.00E+00
+enzyme activator activity	74	1	0.44	+	1.00E+00
+cytokine activity	17	0	0.1	-	1.00E+00
+transmembrane receptor protein kinase activity	19	0	0.11	-	1.00E+00
+guanyl-nucleotide exchange factor activity	73	0	0.44	-	1.00E+00
+small GTPase regulator activity	182	0	1.09	-	1.00E+00
+intramolecular transferase activity	9	0	0.05	-	1.00E+00
+lipid transporter activity	105	0	0.63	-	1.00E+00
+metallopeptidase activity	239	2	1.43	+	1.00E+00
+serine-type peptidase activity	458	1	2.74	-	1.00E+00
+cysteine-type peptidase activity	132	1	0.79	+	1.00E+00
+peptidase activity	853	9	5.1	+	1.00E+00
+ubiquitin-protein ligase activity	142	1	0.85	+	1.00E+00
+phosphorylase activity	10	1	0.06	+	1.00E+00
+kinase activity	538	2	3.22	-	1.00E+00
+pyrophosphatase activity	188	4	1.12	+	1.00E+00
+microtubule motor activity	58	1	0.35	+	1.00E+00
+motor activity	83	3	0.5	+	1.00E+00
+deacetylase activity	22	0	0.13	-	1.00E+00
+phosphatase inhibitor activity	10	0	0.06	-	1.00E+00
+phosphatase activator activity	1	0	0.01	-	1.00E+00
+receptor binding	477	1	2.85	-	1.00E+00
+kinase inhibitor activity	41	0	0.25	-	1.00E+00
+RNA-directed DNA polymerase activity	1	0	0.01	-	1.00E+00
+cation channel activity	54	0	0.32	-	1.00E+00
+kinase activator activity	50	0	0.3	-	1.00E+00
+aspartic-type endopeptidase activity	7	0	0.04	-	1.00E+00
+phosphatase regulator activity	23	0	0.14	-	1.00E+00
+kinase regulator activity	120	1	0.72	+	1.00E+00
+microtubule binding	78	0	0.47	-	1.00E+00
+nucleotide phosphatase activity	31	1	0.19	+	1.00E+00
+carbohydrate phosphatase activity	10	0	0.06	-	1.00E+00
+amino acid kinase activity	10	0	0.06	-	1.00E+00
+nucleotide kinase activity	52	0	0.31	-	1.00E+00
+nucleic acid binding transcription factor activity	911	3	5.44	-	1.00E+00
+phospholipase activity	30	1	0.18	+	1.00E+00
+RNA methyltransferase activity	28	0	0.17	-	1.00E+00
+carbohydrate kinase activity	25	1	0.15	+	1.00E+00
+anion channel activity	42	1	0.25	+	1.00E+00
+protein disulfide isomerase activity	12	1	0.07	+	1.00E+00
+helicase activity	211	1	1.26	-	1.00E+00
+guanylate cyclase activity	18	0	0.11	-	1.00E+00
+carboxy-lyase activity	27	2	0.16	+	1.00E+00
+"hydrolase activity, hydrolyzing N-glycosyl compounds"	75	0	0.45	-	1.00E+00
+voltage-gated potassium channel activity	26	0	0.16	-	1.00E+00
+methyltransferase activity	113	2	0.68	+	1.00E+00
+voltage-gated sodium channel activity	11	0	0.07	-	1.00E+00
+phosphatase activity	179	1	1.07	-	1.00E+00
+voltage-gated calcium channel activity	12	0	0.07	-	1.00E+00
+voltage-gated ion channel activity	54	0	0.32	-	1.00E+00
+gap junction channel activity	9	0	0.05	-	1.00E+00
+translation release factor activity	4	0	0.02	-	1.00E+00
+transcription factor binding transcription factor activity	249	0	1.49	-	1.00E+00
+protein binding transcription factor activity	249	0	1.49	-	1.00E+00
+sequence-specific DNA binding RNA polymerase II transcription factor activity	30	0	0.18	-	1.00E+00
+adenylate cyclase activity	34	0	0.2	-	1.00E+00
+"hydrolase activity, acting on ester bonds"	633	2	3.78	-	1.00E+00
+hydrolase activity	2271	23	13.57	+	1.00E+00
+transketolase activity	3	0	0.02	-	1.00E+00
+peroxidase activity	70	0	0.42	-	1.00E+00
+DNA-directed RNA polymerase activity	30	0	0.18	-	1.00E+00
+DNA primase activity	1	0	0.01	-	1.00E+00
+tumor necrosis factor-activated receptor activity	1	0	0.01	-	1.00E+00
+single-stranded DNA binding	93	1	0.56	+	1.00E+00
+nucleotidyltransferase activity	90	0	0.54	-	1.00E+00
+double-stranded DNA binding	19	0	0.11	-	1.00E+00
+enzyme regulator activity	582	5	3.48	+	1.00E+00
+poly(A) RNA binding	88	2	0.53	+	1.00E+00
+GTPase activity	200	1	1.2	-	1.00E+00
+mRNA binding	249	3	1.49	+	1.00E+00
+"hydrolase activity, hydrolyzing O-glycosyl compounds"	43	0	0.26	-	1.00E+00
+DNA-directed DNA polymerase activity	25	0	0.15	-	1.00E+00
+transforming growth factor beta-activated receptor activity	4	0	0.02	-	1.00E+00
+RNA helicase activity	102	1	0.61	+	1.00E+00
+neuropeptide hormone activity	141	0	0.84	-	1.00E+00
+DNA replication origin binding	31	0	0.19	-	1.00E+00
+DNA-methyltransferase activity	14	1	0.08	+	1.00E+00
+damaged DNA binding	19	0	0.11	-	1.00E+00
+chromatin binding	185	1	1.11	-	1.00E+00
+carbohydrate transmembrane transporter activity	55	0	0.33	-	1.00E+00
+ion channel activity	410	4	2.45	+	1.00E+00
+transporter activity	1267	14	7.57	+	1.00E+00
+DNA topoisomerase activity	31	1	0.19	+	1.00E+00
+antioxidant activity	87	1	0.52	+	1.00E+00
+DNA photolyase activity	7	0	0.04	-	1.00E+00
+hormone activity	154	0	0.92	-	1.00E+00
+nucleotide binding	20	0	0.12	-	1.00E+00
+transcription cofactor activity	249	0	1.49	-	1.00E+00
+structural constituent of myelin sheath	1	0	0.01	-	1.00E+00
+DNA helicase activity	126	0	0.75	-	1.00E+00
+DNA binding	1204	5	7.2	-	1.00E+00
+amylase activity	13	0	0.08	-	1.00E+00
+peptidase inhibitor activity	104	0	0.62	-	1.00E+00
+"transferase activity, transferring glycosyl groups"	315	5	1.88	+	1.00E+00
+cyclic nucleotide-gated ion channel activity	2	0	0.01	-	1.00E+00

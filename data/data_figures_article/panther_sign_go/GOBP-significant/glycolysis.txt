@@ -1,0 +1,3 @@
+DAPPU|Gene=DAPPUDRAFT_347595|UniProtKB=E9GAM4	Enolase;ENO;ortholog	ENOLASE (PTHR11902:SF7)	lyase activity	glycolysis;glycolysis		lyase					Daphnia pulex
+DAPPU|Gene=DAPPUDRAFT_299795|UniProtKB=E9FRQ6	Phosphoglycerate kinase;DAPPUDRAFT_299795;ortholog	PHOSPHOGLYCERATE KINASE (PTHR11406:SF6)	carbohydrate kinase activity	glycolysis;glycolysis		carbohydrate kinase;carbohydrate kinase	Glycolysis->Phosphoglycerate kinase;;				Daphnia pulex
+DAPPU|Gene=DAPPUDRAFT_302344|UniProtKB=E9GCK2	Glucose-6-phosphate isomerase;DAPPUDRAFT_302344;ortholog	GLUCOSE-6-PHOSPHATE ISOMERASE (PTHR11469:SF4)	isomerase activity	glycolysis;gluconeogenesis;glycolysis		isomerase	Pentose phosphate pathway->Glucose-P-Isomerase;;Glycolysis->Phosphoglucose isomerase;;;				Daphnia pulex

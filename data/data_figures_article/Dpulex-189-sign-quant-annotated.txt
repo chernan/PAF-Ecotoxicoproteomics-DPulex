@@ -1,0 +1,330 @@
+UniProt ID	Gene name	Peptides	Log ratio C1/DMSO 2d	Log ratio C2/DMSO 2d	Log ratio C1/DMSO 7d	Log ratio C2/DMSO 7d	Protein name	PANTHER Family/Subfamily	GO Molecular Function	GO Biological Process	GO Cellular Component	PANTHER Protein Class	Pathway
+E9GE27	DAPPUDRAFT_316810	5	0.96	2.16	1.19	2.19	Putative uncharacterized protein	PROTEIN DHS-13 (PTHR24322:SF239)	oxidoreductase activity	steroid metabolic process		dehydrogenase;reductase	
+E9GYD9	DAPPUDRAFT_306743	11	0.29	1.07	1.21	2.08	Putative uncharacterized protein	"ELECTRON TRANSFER FLAVOPROTEIN SUBUNIT ALPHA, MITOCHONDRIAL (PTHR10909:SF91)"	oxidoreductase activity;transferase activity	respiratory electron transport chain;acyl-CoA metabolic process;nitrogen compound metabolic process;fatty acid beta-oxidation;acyl-CoA metabolic process		transferase;dehydrogenase;oxidase	
+E9G3B9	DAPPUDRAFT_127519	13	0.40	1.26	1.41	2.00	Putative uncharacterized protein	DIHYDROPTERIDINE REDUCTASE (PTHR15104:SF0)	oxidoreductase activity	cellular amino acid catabolic process		dehydrogenase;reductase	
+E9GIX9	DAPPUDRAFT_230922	11	0.34	0.85	0.95	1.89	Proteasome subunit alpha type	PROTEASOME SUBUNIT ALPHA TYPE-2 (PTHR11599:SF16)	peptidase activity	proteolysis		protease;protease	Parkinson disease->20S proteasome;;
+E9HGX0	DAPPUDRAFT_301215	20	0.93	0.91	0.95	1.63	Malate dehydrogenase	"MALATE DEHYDROGENASE, MITOCHONDRIAL (PTHR11540:SF16)"	oxidoreductase activity	generation of precursor metabolites and energy;carbohydrate metabolic process;tricarboxylic acid cycle		dehydrogenase	Pyruvate metabolism->Lactate Dehydrogenase;;
+E9G063	DAPPUDRAFT_192475	13	0.20	0.80	0.65	1.54	Putative uncharacterized protein	"LIPOAMIDE ACYLTRANSFERASE COMPONENT OF BRANCHED-CHAIN ALPHA-KETO ACID DEHYDROGENASE COMPLEX, MITOCHONDRIAL (PTHR23151:SF46)"	acetyltransferase activity	coenzyme metabolic process;carbohydrate metabolic process		acetyltransferase;acyltransferase	
+E9GL54	DAPPUDRAFT_230994	3	-1.31	0.72	0.28	1.53	Putative uncharacterized protein	TRANSLOCON-ASSOCIATED PROTEIN SUBUNIT BETA (PTHR12861:SF3)					
+E9HD09	DAPPUDRAFT_231626	5	-0.26	0.04	-0.02	1.50	Putative uncharacterized protein	FERRITIN (PTHR11431:SF4)		cation transport		storage protein	
+E9G927	DAPPUDRAFT_230642	16	0.33	1.17	1.12	1.43	Putative uncharacterized protein	ALCOHOL DEHYDROGENASE CLASS-3 (PTHR11695:SF269)	oxidoreductase activity	carbohydrate metabolic process		dehydrogenase;reductase	
+E9HAP5	DAPPUDRAFT_231549	9	0.16	0.29	0.68	1.37	Proteasome subunit alpha type	PROTEASOME SUBUNIT ALPHA TYPE-6 (PTHR11599:SF11)	peptidase activity	proteolysis		protease;protease	Parkinson disease->20S proteasome;;
+E9HIB3	DAPPUDRAFT_301437	21	0.05	0.40	0.65	1.37	Putative uncharacterized protein	"DIPEPTIDASE B, ISOFORM A (PTHR11963:SF9)"					
+E9GN81	DAPPUDRAFT_231060	4	0.23	0.55	0.87	1.27	ATP-dependent Clp protease proteolytic subunit	"ATP-DEPENDENT CLP PROTEASE PROTEOLYTIC SUBUNIT, MITOCHONDRIAL-RELATED (PTHR10381:SF11)"	serine-type peptidase activity	proteolysis		serine protease;serine protease	
+E9HG20	DAPPUDRAFT_300994	18	0.26	0.51	0.71	1.26	Adenylosuccinate synthetase	ADENYLOSUCCINATE SYNTHETASE (PTHR11846:SF0)	ligase activity	nucleobase-containing compound metabolic process		ligase	Wnt signaling pathway->NFAT Target Genes;;De novo purine biosynthesis->Adenylosuccinate synthase;;;
+E9FYH7	DAPPUDRAFT_306512	13	0.46	0.48	0.49	1.25	Putative uncharacterized protein	2-HYDROXYACYL-COA LYASE 1 (PTHR18968:SF6)	oxidoreductase activity;transferase activity;carboxy-lyase activity	coenzyme metabolic process;vitamin biosynthetic process;carbohydrate metabolic process;cellular amino acid biosynthetic process		transferase;dehydrogenase;decarboxylase	Valine biosynthesis->Acetolactate synthase;;Isoleucine biosynthesis->Acetolactate synthase;;;
+E9H215	DAPPUDRAFT_307363	9	0.12	0.86	0.91	1.19	Putative uncharacterized protein	MUSCLE-SPECIFIC PROTEIN 20 (PTHR18959:SF23)	structural constituent of cytoskeleton;actin binding		actin cytoskeleton;intracellular	non-motor actin binding protein	
+E9GNF0	DAPPUDRAFT_319965	9	0.36	1.06	0.79	1.17	Putative uncharacterized protein	GH08269P (PTHR13586:SF0)	RNA binding	RNA catabolic process		RNA binding protein	
+E9H707	DAPPUDRAFT_110684	15	-0.05	-0.03	0.78	1.16	Putative uncharacterized protein	"LONG-CHAIN SPECIFIC ACYL-COA DEHYDROGENASE, MITOCHONDRIAL (PTHR10909:SF196)"	oxidoreductase activity;transferase activity	respiratory electron transport chain;acyl-CoA metabolic process;nitrogen compound metabolic process;fatty acid beta-oxidation;acyl-CoA metabolic process		transferase;dehydrogenase;oxidase	
+E9G2I4	DAPPUDRAFT_230516	9	0.58	1.24	0.75	1.16	Putative uncharacterized protein	PROTEIN ATH-1 (PTHR10655:SF17)	phospholipase activity	lipid metabolic process;protein lipidation;cellular process		phospholipase	
+E9FZS1	DAPPUDRAFT_307155	8	0.46	1.21	1.21	1.12	Putative uncharacterized protein	CARBONYL REDUCTASE 1-RELATED (PTHR24322:SF58)	oxidoreductase activity	steroid metabolic process		dehydrogenase;reductase	
+E9H2U7	DAPPUDRAFT_307555	6	0.44	0.38	0.15	1.10	Profilin	PROFILIN (PTHR11604:SF0)	structural constituent of cytoskeleton;actin binding	cellular process;cellular component organization	actin cytoskeleton;intracellular	non-motor actin binding protein	Cytoskeletal regulation by Rho GTPase->Profilin;;
+E9FS67	DAPPUDRAFT_300057	11	0.43	1.20	0.16	1.07	Putative uncharacterized protein	PROTEIN C07D8.6 (PTHR11732:SF144)	oxidoreductase activity;transporter activity	metabolic process;transport		reductase	
+E9FXU5	DAPPUDRAFT_311761	40	0.42	0.47	0.66	1.07	Putative uncharacterized protein	VILLIN-LIKE PROTEIN QUAIL (PTHR11977:SF37)	structural constituent of cytoskeleton;calcium ion binding;actin binding	cellular process;cellular component morphogenesis;cellular component organization	actin cytoskeleton;intracellular	non-motor actin binding protein;calcium-binding protein	
+E9GAM4	DAPPUDRAFT_347595	26	-0.41	-0.09	0.83	1.06	Enolase	ENOLASE (PTHR11902:SF7)	lyase activity	glycolysis;glycolysis		lyase	
+E9GZ78	DAPPUDRAFT_306867	8	0.58	0.40	0.33	1.05	Proteasome subunit beta type	PROTEASOME SUBUNIT BETA TYPE (PTHR11599:SF4)	peptidase activity	proteolysis		protease;protease	
+E9GAM6	DAPPUDRAFT_230683	11	0.11	0.39	0.45	1.05	Putative uncharacterized protein	PROHIBITIN-2 (PTHR23222:SF1)		DNA replication;cell cycle			
+E9G787	DAPPUDRAFT_209506	5	1.04	1.54	0.51	0.98	Putative uncharacterized protein	"10 KDA HEAT SHOCK PROTEIN, MITOCHONDRIAL (PTHR10772:SF5)"		protein metabolic process		chaperonin	
+E9GN74	DAPPUDRAFT_225274	11	0.79	1.87	0.93	0.95	Putative uncharacterized protein						
+E9G631	DAPPUDRAFT_46417	16	0.54	0.93	0.73	0.94	Putative uncharacterized protein	"FUMARATE HYDRATASE, MITOCHONDRIAL (PTHR11444:SF1)"	lyase activity	purine nucleobase metabolic process;cellular amino acid metabolic process		lyase	TCA cycle->Fumarase;;
+E9H6I9	DAPPUDRAFT_308120	13	0.64	1.23	0.82	0.93	Putative uncharacterized protein	CALPONIN-LIKE PROTEIN CHD64 (PTHR18959:SF39)	structural constituent of cytoskeleton;actin binding	muscle contraction	actin cytoskeleton;intracellular	non-motor actin binding protein	
+E9H1S8	DAPPUDRAFT_307331	12	0.75	1.29	-0.02	0.92	Putative uncharacterized protein	HETEROGENEOUS NUCLEAR RIBONUCLEOPROTEIN A0 (PTHR24012:SF339)	catalytic activity;structural constituent of ribosome;poly(A) RNA binding	"DNA replication;RNA splicing, via transesterification reactions;mRNA splicing, via spliceosome;mRNA polyadenylation;RNA splicing, via transesterification reactions;rRNA metabolic process;protein metabolic process;cell cycle"	ribonucleoprotein complex	mRNA polyadenylation factor;mRNA splicing factor;ribonucleoprotein;ribosomal protein	
+E9GCN3	DAPPUDRAFT_302347	12	0.11	1.04	0.66	0.88	Putative uncharacterized protein	"3-HYDROXYISOBUTYRATE DEHYDROGENASE, MITOCHONDRIAL (PTHR22981:SF7)"	oxidoreductase activity	cellular amino acid biosynthetic process;cellular amino acid catabolic process		dehydrogenase	
+E9FZ14	DAPPUDRAFT_306451	29	0.28	0.53	0.64	0.88	Putative uncharacterized protein	"ATPASE, H+ TRANSPORTING, LYSOSOMAL V1 SUBUNIT B2-RELATED (PTHR15184:SF11)"	"hydrolase activity;receptor activity;anion channel activity;ligand-gated ion channel activity;cation transmembrane transporter activity;proton-transporting ATP synthase activity, rotational mechanism;single-stranded DNA binding"	respiratory electron transport chain;purine nucleobase metabolic process;cation transport;nucleobase-containing compound transport	proton-transporting ATP synthase complex;intracellular	ATP synthase;anion channel;ligand-gated ion channel;ligand-gated ion channel;DNA binding protein;hydrolase	
+E9FRN7	DAPPUDRAFT_299789	12	0.83	1.03	0.89	0.88	Putative uncharacterized protein	3-HYDROXYACYL-COA DEHYDROGENASE TYPE-2 (PTHR24316:SF251)	oxidoreductase activity	cellular amino acid biosynthetic process;steroid metabolic process		dehydrogenase;reductase	
+E9FWX1	DAPPUDRAFT_305476	11	0.18	0.92	0.39	0.87	Putative uncharacterized protein	ELECTRON TRANSFER FLAVOPROTEIN SUBUNIT BETA (PTHR21294:SF0)	oxidoreductase activity	respiratory electron transport chain		hydroxylase	
+E9FW02	DAPPUDRAFT_304712	10	0.16	0.28	0.20	0.87	"Cytochrome b-c1 complex subunit Rieske, mitochondrial"	"CYTOCHROME B-C1 COMPLEX SUBUNIT RIESKE, MITOCHONDRIAL (PTHR10134:SF4)"	oxidoreductase activity	oxidative phosphorylation;respiratory electron transport chain	mitochondrion;cytoplasm	reductase	
+E9H1K6	DAPPUDRAFT_188759	19	0.22	0.71	0.66	0.85	Putative uncharacterized protein	"DIHYDROLIPOYLLYSINE-RESIDUE ACETYLTRANSFERASE COMPONENT OF PYRUVATE DEHYDROGENASE COMPLEX, MITOCHONDRIAL (PTHR23151:SF9)"	acetyltransferase activity	coenzyme metabolic process;carbohydrate metabolic process		acetyltransferase;acyltransferase	
+E9GLP0	DAPPUDRAFT_304489	6	-0.01	0.98	0.59	0.85	Putative uncharacterized protein	SUBFAMILY NOT NAMED (PTHR18959:SF51)	structural constituent of cytoskeleton;actin binding	muscle contraction	actin cytoskeleton;intracellular	non-motor actin binding protein	
+E9GAI5	DAPPUDRAFT_239963	14	-0.29	-0.39	0.29	0.85	Putative uncharacterized protein	PROTEIN Y59C2A.1 (PTHR11705:SF61)	metallopeptidase activity	proteolysis		metalloprotease;metalloprotease	
+E9FQU4	DAPPUDRAFT_220118	8	0.68	0.82	0.92	0.85	Putative uncharacterized protein	LETHAL (3) 03670 (PTHR21588:SF1)					
+E9H8T5	DAPPUDRAFT_308666	23	0.47	0.38	0.19	0.84	Aspartate aminotransferase	"GLUTAMATE OXALOACETATE TRANSAMINASE 1, ISOFORM B (PTHR11879:SF5)"	transaminase activity	cellular amino acid metabolic process		transaminase	Asparagine and aspartate biosynthesis->Aspartate aminotransferase;;
+E9HI00	DAPPUDRAFT_62934	20	-0.02	-0.17	0.51	0.83	Putative uncharacterized protein (Fragment)	"MEDIUM-CHAIN SPECIFIC ACYL-COA DEHYDROGENASE, MITOCHONDRIAL (PTHR10909:SF240)"	oxidoreductase activity;transferase activity	respiratory electron transport chain;acyl-CoA metabolic process;nitrogen compound metabolic process;fatty acid beta-oxidation;acyl-CoA metabolic process		transferase;dehydrogenase;oxidase	
+E9GVE9	DAPPUDRAFT_322268	9	0.43	0.43	0.53	0.82	Putative uncharacterized protein	"ENOYL-COA HYDRATASE, MITOCHONDRIAL (PTHR11941:SF24)"	oxidoreductase activity;acetyltransferase activity;hydro-lyase activity;racemase and epimerase activity;ligase activity	coenzyme metabolic process;vitamin biosynthetic process;carbohydrate metabolic process;fatty acid beta-oxidation		acetyltransferase;acyltransferase;dehydrogenase;hydratase;ligase;epimerase/racemase	
+E9GER1	DAPPUDRAFT_302845	27	0.23	0.56	0.28	0.81	Putative uncharacterized protein	TUBULIN BETA-1 CHAIN (PTHR11588:SF9)	structural constituent of cytoskeleton	cellular component movement;mitosis;chromosome segregation;intracellular protein transport;cellular component organization	microtubule;tubulin complex;cytoskeleton;intracellular	tubulin	Huntington disease->beta-Tubulin;;Huntington disease->Microtubule;;Cytoskeletal regulation by Rho GTPase->Tubulin;;;;
+E9H2T2	DAPPUDRAFT_200339	20	0.05	0.73	0.79	0.81	Putative uncharacterized protein	SUBFAMILY NOT NAMED (PTHR11851:SF105)	metallopeptidase activity	proteolysis		metalloprotease;metalloprotease	
+E9HA96	DAPPUDRAFT_308915	14	0.61	1.38	0.65	0.79	Malate dehydrogenase	"MALATE DEHYDROGENASE, CYTOPLASMIC (PTHR23382:SF3)"	oxidoreductase activity	generation of precursor metabolites and energy;carbohydrate metabolic process;tricarboxylic acid cycle		dehydrogenase	TCA cycle->Malate Dehydrogenase;;
+E9GL77	DAPPUDRAFT_304315	7	0.64	0.87	0.58	0.79	Putative uncharacterized protein	F-ACTIN-CAPPING PROTEIN SUBUNIT BETA (PTHR10619:SF0)	structural constituent of cytoskeleton;actin binding	cellular process;cellular component organization	actin cytoskeleton;intracellular	non-motor actin binding protein	
+E9G0Y9	DAPPUDRAFT_312475	12	0.49	0.80	0.47	0.76	Putative uncharacterized protein	NEOSIN (PTHR23295:SF2)					
+E9FRQ6	DAPPUDRAFT_299795	22	0.51	1.05	0.90	0.76	Phosphoglycerate kinase	PHOSPHOGLYCERATE KINASE (PTHR11406:SF6)	carbohydrate kinase activity	glycolysis;glycolysis		carbohydrate kinase;carbohydrate kinase	Glycolysis->Phosphoglycerate kinase;;
+E9H3T0	DAPPUDRAFT_307666	11	2.04	0.42	-1.29	0.75	Putative uncharacterized protein	NUCLEOLIN 1-RELATED (PTHR24012:SF330)	catalytic activity;structural constituent of ribosome;poly(A) RNA binding	"DNA replication;RNA splicing, via transesterification reactions;mRNA splicing, via spliceosome;mRNA polyadenylation;RNA splicing, via transesterification reactions;rRNA metabolic process;protein metabolic process;cell cycle"	ribonucleoprotein complex	mRNA polyadenylation factor;mRNA splicing factor;ribonucleoprotein;ribosomal protein	
+E9GXW8	DAPPUDRAFT_55751	12	0.73	0.73	0.89	0.74	Putative uncharacterized protein	"CYTOCHROME C OXIDASE SUBUNIT 5A, MITOCHONDRIAL (PTHR14200:SF11)"	oxidoreductase activity	oxidative phosphorylation;respiratory electron transport chain		oxidase	
+E9HC70	DAPPUDRAFT_228205	7	0.42	0.57	0.79	0.71	Putative uncharacterized protein	"ACETYL-COA ACETYLTRANSFERASE, MITOCHONDRIAL (PTHR18919:SF79)"	acetyltransferase activity	protein acetylation		acetyltransferase	
+E9FV57	DAPPUDRAFT_220693	32	0.45	0.55	0.68	0.70	Putative uncharacterized protein	ARGININE KINASE (PTHR11547:SF18)					
+E9G7M2	DAPPUDRAFT_99667	5	-0.13	0.28	0.52	0.69	Proteasome subunit beta type	PROTEASOME SUBUNIT BETA TYPE-4 (PTHR11599:SF5)	peptidase activity	proteolysis		protease;protease	Parkinson disease->20S proteasome;;
+E9FWW3	DAPPUDRAFT_234554	6	0.36	-0.54	0.85	0.47	Putative uncharacterized protein DpGSTM1	SUBFAMILY NOT NAMED (PTHR11571:SF108)					
+E9G0Q9	DAPPUDRAFT_230426	14	-0.14	-0.39	0.96	0.40	Putative uncharacterized protein	GLUCOSAMINE-6-PHOSPHATE ISOMERASE (PTHR11280:SF5)	hydrolase activity;isomerase activity	monosaccharide metabolic process		isomerase;hydrolase	N-acetylglucosamine metabolism->Glucosamine-6-phosphate deaminase;;
+E9HTT3	DAPPUDRAFT_333777	17	-4.54	0.64	-1.37	0.32	Putative uncharacterized protein	CYSTATHIONINE BETA-SYNTHASE (PTHR10314:SF48)	hydrolase activity;hydro-lyase activity;racemase and epimerase activity;deaminase activity	carbohydrate metabolic process;cellular amino acid biosynthetic process;cellular amino acid catabolic process;cellular process		dehydratase;epimerase/racemase;deaminase	Cysteine biosynthesis->O-Acetylserine-lyase;;
+E9HX82	DAPPUDRAFT_306944	4	0.02	0.63	1.46	0.21	Putative uncharacterized protein						
+E9GVW7	DAPPUDRAFT_347678	150	-0.76	-0.42	0.99	0.08	Vitellogenin fused with superoxide dismutase		lipid transporter activity				
+E9H1Z1	DAPPUDRAFT_200149	4	-1.11	-2.32	-1.18	-0.08	Putative uncharacterized protein	VERY-LONG-CHAIN 3-OXOOACYL-COA REDUCTASE LET-767-RELATED (PTHR24316:SF68)	oxidoreductase activity	cellular amino acid biosynthetic process;steroid metabolic process		dehydrogenase;reductase	
+E9GA96	DAPPUDRAFT_230667	12	0.36	-0.40	-1.29	-0.23	Putative uncharacterized protein	40S RIBOSOMAL PROTEIN S7 (PTHR11278:SF0)		nitrogen compound metabolic process;rRNA metabolic process;cellular process;cellular component biogenesis	ribosome;organelle;cytosol	ribosomal protein	
+E9G3M6	DAPPUDRAFT_230521	11	0.57	-0.15	-1.00	-0.40	Putative uncharacterized protein	40S RIBOSOMAL PROTEIN S14 (PTHR11759:SF1)	structural constituent of ribosome;nucleic acid binding	translation		ribosomal protein	
+E9H4K0	DAPPUDRAFT_307947	5	-1.32	-2.40	-0.49	-0.60	Putative uncharacterized protein	FI18627P1 (PTHR11782:SF30)	nucleotide phosphatase activity;nucleotide phosphatase activity	purine nucleobase metabolic process		nucleotide phosphatase;nucleotide phosphatase	
+E9H8K5	DAPPUDRAFT_308675	99	-1.14	-1.79	-0.68	-0.65	Putative uncharacterized protein	VITELLOGENIN-2 (PTHR23345:SF1)					
+E9HGT3	DAPPUDRAFT_301203	15	-0.63	-0.76	-1.59	-0.75	Putative uncharacterized protein	EPOXIDE HYDROLASE 1 (PTHR21661:SF10)					
+E9GXS2	DAPPUDRAFT_306633	18	0.25	-0.70	-0.97	-0.78	Putative uncharacterized protein	40S RIBOSOMAL PROTEIN S3 (PTHR11760:SF9)	structural constituent of ribosome;nucleic acid binding	translation		ribosomal protein	
+E9FVG7	DAPPUDRAFT_304661	201	-0.53	-0.98	-0.40	-0.81	Putative uncharacterized protein	VITELLOGENIN-2 (PTHR23345:SF1)					
+E9FRE7	DAPPUDRAFT_299958	20	-0.02	-0.48	-0.10	-0.82	Citrate synthase	"CITRATE SYNTHASE, MITOCHONDRIAL (PTHR11739:SF8)"	transferase activity;lyase activity	generation of precursor metabolites and energy;carbohydrate metabolic process;tricarboxylic acid cycle;cellular amino acid biosynthetic process;cellular amino acid catabolic process		transferase;lyase	Pyruvate metabolism->Citrate Synthetase;;TCA cycle->Citrate Synthase;;;
+E9GN88	DAPPUDRAFT_231062	14	-0.16	-0.45	-0.78	-0.83	Putative uncharacterized protein	EUKARYOTIC TRANSLATION INITIATION FACTOR 2 SUBUNIT 3 (PTHR23115:SF9)	GTPase activity;translation initiation factor activity;translation elongation factor activity;translation initiation factor activity;translation elongation factor activity;protein binding;translation initiation factor activity;translation elongation factor activity	translation;regulation of translation		translation elongation factor;translation initiation factor;hydrolase;G-protein	
+E9G0P4	DAPPUDRAFT_192601	33	-0.22	-0.67	-0.61	-0.83	Putative uncharacterized protein	SUBFAMILY NOT NAMED (PTHR11590:SF40)					
+E9HLH8	DAPPUDRAFT_261701	13	0.67	0.25	-1.14	-0.84	Putative uncharacterized protein	MATERNAL PROTEIN EXUPERANTIA (PTHR12384:SF1)					
+E9HTS2	DAPPUDRAFT_231875	10	0.35	-0.11	-0.84	-0.84	Putative uncharacterized protein	60S RIBOSOMAL PROTEIN L9 (PTHR11655:SF16)	structural constituent of ribosome;nucleic acid binding	translation		ribosomal protein	
+E9GBP0	DAPPUDRAFT_316089	27	-0.40	-1.11	-1.04	-0.84	Putative uncharacterized protein	"ISOLEUCINE--TRNA LIGASE, CYTOPLASMIC (PTHR11946:SF11)"	aminoacyl-tRNA ligase activity	translation		aminoacyl-tRNA synthetase	
+E9G119	DAPPUDRAFT_307787	9	0.00	-0.27	0.04	-0.85	Prostaglandin D2 synthase-like protein	HEMATOPOIETIC PROSTAGLANDIN D SYNTHASE (PTHR11571:SF118)					
+E9GHX8	DAPPUDRAFT_303760	30	0.02	-0.78	-1.00	-0.85	Putative uncharacterized protein	CLUSTERED MITOCHONDRIA PROTEIN HOMOLOG (PTHR12601:SF6)	translation initiation factor activity;translation initiation factor activity;translation initiation factor activity	translation;regulation of translation		translation initiation factor	
+E9FV79	DAPPUDRAFT_230203	9	-0.28	-0.76	-0.25	-0.85	Putative uncharacterized protein	NADH DEHYDROGENASE [UBIQUINONE] 1 BETA SUBCOMPLEX SUBUNIT 10 (PTHR13094:SF1)					
+E9H4B8	DAPPUDRAFT_227119	14	0.11	-0.27	-0.31	-0.85	Putative uncharacterized protein	FRAGILE X MENTAL RETARDATION SYNDROME-RELATED PROTEIN 1 (PTHR10603:SF7)					
+E9FVV4	DAPPUDRAFT_310872	5	1.20	0.26	-0.56	-0.86	Putative uncharacterized protein						
+E9HM79	DAPPUDRAFT_331348	27	-0.24	-0.43	-0.82	-0.87	Putative uncharacterized protein	"EUKARYOTIC TRANSLATION INITIATION FACTOR 4G, ISOFORM B-RELATED (PTHR23253:SF9)"	translation initiation factor activity;translation initiation factor activity;translation initiation factor activity	translation;regulation of translation		translation initiation factor	
+E9GLV0	DAPPUDRAFT_197428	32	0.07	-0.43	-0.58	-0.87	Putative uncharacterized protein	"NEURAL CONSERVED AT 73EF, ISOFORM I (PTHR23152:SF6)"					
+E9FUJ2	DAPPUDRAFT_304762	11	-0.76	-1.12	-0.55	-0.89	Putative uncharacterized protein	SUBFAMILY NOT NAMED (PTHR11590:SF16)	"transferase activity, transferring acyl groups"	cellular protein modification process		acyltransferase	
+E9H393	DAPPUDRAFT_347357	11	0.40	0.10	-0.85	-0.90	"ABC protein, subfamily ABCF"	ATP-BINDING CASSETTE SUB-FAMILY F MEMBER 1 (PTHR19211:SF14)	"ATPase activity, coupled to transmembrane movement of substances;transmembrane transporter activity;translation elongation factor activity;translation elongation factor activity;translation elongation factor activity"	translation;transport;regulation of translation		ATP-binding cassette (ABC) transporter;translation elongation factor;hydrolase	
+E9G230	DAPPUDRAFT_299574	12	-0.01	-0.21	-0.45	-0.90	Uroporphyrinogen decarboxylase	UROPORPHYRINOGEN DECARBOXYLASE (PTHR21091:SF2)	oxidoreductase activity;methyltransferase activity;carboxy-lyase activity	porphyrin-containing compound metabolic process;cellular amino acid biosynthetic process		methyltransferase;reductase;decarboxylase	Heme biosynthesis->Uroporphyrinogen decarboxylase;;
+E9GDK0	DAPPUDRAFT_128059	10	-0.89	-1.20	-0.83	-0.91	Putative uncharacterized protein	GH09086P (PTHR24073:SF352)					
+E9GZ69	DAPPUDRAFT_226428	12	-0.27	-0.65	-0.96	-0.91	Putative uncharacterized protein	DOLICHYL-DIPHOSPHOOLIGOSACCHARIDE--PROTEIN GLYCOSYLTRANSFERASE SUBUNIT 1 (PTHR21049:SF0)	"transferase activity, transferring glycosyl groups"	translation;protein glycosylation		glycosyltransferase	
+E9HUP6	DAPPUDRAFT_304533	7	0.10	-0.55	0.05	-0.91	Putative uncharacterized protein	CYSTATHIONINE GAMMA-LYASE (PTHR11808:SF15)	lyase activity	cellular amino acid metabolic process		lyase	Methionine biosynthesis->O-Succinyl homoserine lyase;;
+E9GCL9	DAPPUDRAFT_48979	13	-0.83	-1.19	-0.03	-0.91	Glucose-6-phosphate 1-dehydrogenase	GLUCOSE-6-PHOSPHATE 1-DEHYDROGENASE (PTHR23429:SF0)	oxidoreductase activity	monosaccharide metabolic process		dehydrogenase	
+E9GAE4	DAPPUDRAFT_301820	28	0.00	-0.36	-0.13	-0.92	Isocitrate dehydrogenase [NADP]		NAD binding;isocitrate dehydrogenase (NADP+) activity;magnesium ion binding	isocitrate metabolic process;tricarboxylic acid cycle			
+E9HZI5	DAPPUDRAFT_347667	19	1.28	-0.32	0.41	-0.95	Superoxide dismutase [Cu-Zn] (Fragment)	SUPEROXIDE DISMUTASE [CU-ZN] (PTHR10003:SF32)	oxidoreductase activity;binding;antioxidant activity	metabolic process;cellular process;response to stress	organelle;cytoplasm	oxidoreductase	
+E9H082	DAPPUDRAFT_323929	34			0.20	-0.96	Putative uncharacterized protein	VITELLOGENIN-2 (PTHR23345:SF1)					
+E9FTC5	DAPPUDRAFT_303176	20	-0.32	-0.80	-1.67	-0.97	Putative uncharacterized protein	"CYSTEINE--TRNA LIGASE, CYTOPLASMIC (PTHR10890:SF3)"	aminoacyl-tRNA ligase activity	nitrogen compound metabolic process;biosynthetic process;tRNA metabolic process;cellular amino acid metabolic process;translation;cellular process	cytoplasm	RNA binding protein;aminoacyl-tRNA synthetase	
+E9HNC7	DAPPUDRAFT_189585	17	-0.53	-1.27	-0.46	-1.00	Putative uncharacterized protein	ATP-BINDING CASSETTE SUB-FAMILY E MEMBER 1 (PTHR19248:SF16)					
+E9G5T1	DAPPUDRAFT_300729	18	-0.16	-0.79	-0.55	-1.00	Putative uncharacterized protein	"NADH DEHYDROGENASE [UBIQUINONE] 1 ALPHA SUBCOMPLEX SUBUNIT 9, MITOCHONDRIAL (PTHR12126:SF1)"	oxidoreductase activity	oxidative phosphorylation;respiratory electron transport chain		dehydrogenase;reductase	
+E9H736	DAPPUDRAFT_308269	3	-2.21	-0.74	-0.76	-1.01	Putative uncharacterized protein	"DILUTE CLASS UNCONVENTIONAL MYOSIN, ISOFORM C (PTHR13140:SF191)"	motor activity;structural constituent of cytoskeleton;protein binding;enzyme regulator activity	metabolic process;cytokinesis;cellular component movement;mitosis;cell communication;intracellular protein transport;vesicle-mediated transport;regulation of catalytic activity;cellular component organization	plasma membrane;actin cytoskeleton;intracellular	G-protein modulator;actin binding motor protein;cell junction protein	Nicotinic acetylcholine receptor signaling pathway->Myosin;;
+E9GCC8	DAPPUDRAFT_187913	11	-0.20	-0.97	-0.09	-1.02	Putative uncharacterized protein	"SERINE--TRNA LIGASE, CYTOPLASMIC (PTHR11778:SF0)"	aminoacyl-tRNA ligase activity;RNA binding	translation		RNA binding protein;aminoacyl-tRNA synthetase	
+E9GPB6	DAPPUDRAFT_53209	15	-0.57	-1.12	-0.56	-1.02	Putative uncharacterized protein	"NADH DEHYDROGENASE [UBIQUINONE] FLAVOPROTEIN 1, MITOCHONDRIAL (PTHR11780:SF0)"	oxidoreductase activity	oxidative phosphorylation;respiratory electron transport chain		dehydrogenase;reductase	
+E9H2T3	DAPPUDRAFT_215354	18	0.22	-0.02	-1.19	-1.03	Putative uncharacterized protein	EUKARYOTIC TRANSLATION INITIATION FACTOR 3 SUBUNIT D (PTHR12399:SF0)	translation initiation factor activity;translation initiation factor activity;translation initiation factor activity	translation;regulation of translation		translation initiation factor	
+E9H9P6	DAPPUDRAFT_327058	14	0.04	-0.63	-1.20	-1.03	Putative uncharacterized protein	PROTEIN ANON-37CS (PTHR10742:SF250)	oxidoreductase activity;DNA-methyltransferase activity;nucleic acid binding	induction of apoptosis;respiratory electron transport chain;porphyrin-containing compound metabolic process;nucleobase-containing compound metabolic process;cellular amino acid metabolic process;cellular process;induction of apoptosis;chromatin organization		DNA methyltransferase;oxidase;DNA binding protein	
+E9H6U8	DAPPUDRAFT_326141	21	-0.65	-0.74	-0.89	-1.03	Putative uncharacterized protein	CALCIUM-BINDING MITOCHONDRIAL CARRIER PROTEIN ARALAR1 (PTHR24089:SF13)	amino acid transmembrane transporter activity;transmembrane transporter activity;calcium ion binding;calmodulin binding	phosphate-containing compound metabolic process;nucleobase-containing compound metabolic process;lipid metabolic process;cation transport;phosphate ion transport;lipid transport;nucleobase-containing compound transport	mitochondrial inner membrane;mitochondrion;cytoplasm	amino acid transporter;mitochondrial carrier protein;transfer/carrier protein;calmodulin	
+E9G2W4	DAPPUDRAFT_208250	100	0.12	-0.49	0.03	-1.03	Putative uncharacterized protein	FILAMIN-A (PTHR11915:SF251)	structural constituent of cytoskeleton;actin binding	cellular component movement;cellular component morphogenesis;cellular component organization	actin cytoskeleton;intracellular	non-motor actin binding protein	
+E9HGV5	DAPPUDRAFT_329527	21	-0.21	-0.74	-0.70	-1.03	DNA topoisomerase 2	DNA TOPOISOMERASE 2 (PTHR10169:SF38)	pyrophosphatase activity;DNA topoisomerase activity;DNA topoisomerase activity	reproduction;phosphate-containing compound metabolic process;nitrogen compound metabolic process;catabolic process;biosynthetic process;DNA replication;DNA recombination;meiosis;chromosome segregation;organelle organization	nucleus;nuclear chromosome;intracellular	DNA topoisomerase;isomerase;enzyme modulator	DNA replication->DNA Topoisomerase;;DNA replication->Topoisomerase;;;
+E9G6P0	DAPPUDRAFT_99081	57	-0.24	-1.08	-1.04	-1.04	Putative uncharacterized protein	"ALPHA-ACTININ, SARCOMERIC (PTHR11915:SF270)"	structural constituent of cytoskeleton;actin binding	cellular component movement;cellular component morphogenesis;cellular component organization	actin cytoskeleton;intracellular	non-motor actin binding protein	Integrin signalling pathway->alpha actinin;;
+E9H1Y1	DAPPUDRAFT_93126	9	-0.57	-0.93	-0.96	-1.07	Putative uncharacterized protein	AT04468P-RELATED (PTHR11523:SF22)					
+E9H0V8	DAPPUDRAFT_199801	12	0.11	-0.57	-0.76	-1.07	Putative uncharacterized protein	GLYCOSYLTRANSFERASE 25 FAMILY MEMBER (PTHR10730:SF2)	oxidoreductase activity	protein metabolic process;cellular process;cell adhesion		oxygenase	
+E9G6H2	DAPPUDRAFT_300820	11	-0.09	-0.63	-0.37	-1.07	Putative uncharacterized protein	GLUTAMATE--CYSTEINE LIGASE CATALYTIC SUBUNIT (PTHR11164:SF0)	ligase activity	sulfur compound metabolic process;nitrogen compound metabolic process;biosynthetic process;cellular amino acid biosynthetic process;cellular process	intracellular	ligase	
+E9FSI1	DAPPUDRAFT_190431	14	-0.15	-0.45	-1.39	-1.07	Putative uncharacterized protein	LIM-9 ISOFORM (PTHR24205:SF4)					
+E9GA08	DAPPUDRAFT_301644	35	-0.50	-0.81	-1.32	-1.07	Putative uncharacterized protein	COATOMER SUBUNIT ALPHA (PTHR19876:SF1)		intracellular protein transport;exocytosis;endocytosis	vesicle coat;cytoplasm	vesicle coat protein	
+E9FUY1	DAPPUDRAFT_304799	13	-0.01	-0.76	-0.84	-1.09	"ABC protein, subfamily ABCF"	ATP-BINDING CASSETTE SUB-FAMILY F MEMBER 2 (PTHR19211:SF15)	"ATPase activity, coupled to transmembrane movement of substances;transmembrane transporter activity;translation elongation factor activity;translation elongation factor activity;translation elongation factor activity"	translation;transport;regulation of translation		ATP-binding cassette (ABC) transporter;translation elongation factor;hydrolase	
+E9G341	DAPPUDRAFT_187511	29	-0.37	-0.53	-0.70	-1.11	Putative uncharacterized protein	CAD PROTEIN (PTHR11405:SF5)	transferase activity;ligase activity	nitrogen compound metabolic process;pyrimidine nucleobase metabolic process;cellular amino acid biosynthetic process		transferase;ligase	Arginine biosynthesis->Carbamoyl phosphate synthase;;De novo pyrmidine ribonucleotides biosythesis->Carbamoyl phosphate synthetase;;;
+E9G8S6	DAPPUDRAFT_301328	4	2.13	0.44	-1.68	-1.11	Putative uncharacterized protein						
+E9HN52	DAPPUDRAFT_302417	30	-0.10	-0.59	-0.56	-1.12	Putative uncharacterized protein	"TRIFUNCTIONAL ENZYME SUBUNIT ALPHA, MITOCHONDRIAL (PTHR23309:SF9)"	oxidoreductase activity;hydro-lyase activity;racemase and epimerase activity	carbohydrate metabolic process;fatty acid beta-oxidation;translation		dehydrogenase;hydratase;epimerase/racemase	
+E9H7X5	DAPPUDRAFT_111031	62	-0.65	-0.99	-1.35	-1.12	Putative uncharacterized protein	TRANSLATIONAL ACTIVATOR GCN1 (PTHR23346:SF7)	kinase activity;protein binding;kinase regulator activity	translation;cellular protein modification process;regulation of catalytic activity		kinase modulator	
+E9FTU9	DAPPUDRAFT_310496	63	-1.29	-1.74	-0.84	-1.14	Putative uncharacterized protein	RYANODINE RECEPTOR 44F (PTHR13715:SF74)	receptor activity;ligand-gated ion channel activity	immune system process;cellular component movement;cell-cell signaling;response to stress;cation transport		ligand-gated ion channel;ligand-gated ion channel	Beta2 adrenergic receptor signaling pathway->ER-type Ca2+ channel;;Beta1 adrenergic receptor signaling pathway->ER-type Ca2+ channel;;;
+E9H862	DAPPUDRAFT_227683	50	-0.26	-1.23	-1.07	-1.14	Putative uncharacterized protein	BIFUNCTIONAL GLUTAMATE/PROLINE--TRNA LIGASE (PTHR10119:SF15)	aminoacyl-tRNA ligase activity	translation	cytoplasm	aminoacyl-tRNA synthetase	Heme biosynthesis->Glutamyl-tRNA-synthetase;;
+E9H7R2	DAPPUDRAFT_201196	14	0.01	-0.38	-0.99	-1.15	Putative uncharacterized protein	AT24389P (PTHR11153:SF8)	cation transmembrane transporter activity	cation transport		cation transporter;transfer/carrier protein	
+E9GTP3	DAPPUDRAFT_213575	67	-0.67	-1.26	-1.19	-1.15	Putative uncharacterized protein	CLATHRIN HEAVY CHAIN (PTHR10292:SF1)		cellular process;intracellular protein transport;receptor-mediated endocytosis	vesicle coat;cytoplasm	vesicle coat protein	Heterotrimeric G-protein signaling pathway-Gq alpha and Go alpha mediated pathway->Clathrin;;Heterotrimeric G-protein signaling pathway-Gi alpha and Gs alpha mediated pathway->Clathrin;;;
+E9G121	DAPPUDRAFT_307788	14	0.01	-0.74	-1.57	-1.15	Putative uncharacterized protein	40S RIBOSOMAL PROTEIN S16 (PTHR21569:SF4)	structural constituent of ribosome;RNA binding	translation	ribonucleoprotein complex	ribonucleoprotein;ribosomal protein	
+E9HNC5	DAPPUDRAFT_302451	16	-0.12	-1.42	-1.64	-1.16	Putative uncharacterized protein	"ARGININE--TRNA LIGASE, CYTOPLASMIC (PTHR11956:SF1)"					
+E9HGQ3	DAPPUDRAFT_301190	6	0.53	-0.12	-1.06	-1.19	Putative uncharacterized protein	PDZ AND LIM DOMAIN PROTEIN ZASP (PTHR24214:SF29)					
+E9FZS8	DAPPUDRAFT_347733	189	0.54	-0.44	-0.53	-1.19	Myosin heavy chain isoform 3	"MYOSIN HEAVY CHAIN, ISOFORM O-RELATED (PTHR13140:SF364)"	motor activity;structural constituent of cytoskeleton;protein binding;enzyme regulator activity	metabolic process;cytokinesis;cellular component movement;mitosis;cell communication;intracellular protein transport;vesicle-mediated transport;regulation of catalytic activity;cellular component organization	plasma membrane;actin cytoskeleton;intracellular	G-protein modulator;actin binding motor protein;cell junction protein	
+E9GKM8	DAPPUDRAFT_212220	15	-0.59	-1.33	-1.00	-1.23	Putative uncharacterized protein	AP-2 COMPLEX SUBUNIT ALPHA (PTHR22780:SF4)		intracellular protein transport;receptor-mediated endocytosis		transmembrane receptor regulatory/adaptor protein	Huntington disease->alpha-Adaptin;;
+E9HJQ1	DAPPUDRAFT_260714	15	-0.69	-1.18	-1.06	-1.24	Putative uncharacterized protein	VITELLOGENIN-2 (PTHR23345:SF1)					
+E9G2G6	DAPPUDRAFT_308519	54	-0.49	-0.97	-1.12	-1.24	Phosphorylase	"GLYCOGEN PHOSPHORYLASE, MUSCLE FORM (PTHR11468:SF5)"	phosphorylase activity	glycogen metabolic process		phosphorylase	Heterotrimeric G-protein signaling pathway-Gi alpha and Gs alpha mediated pathway->Phosphorylase b;;Heterotrimeric G-protein signaling pathway-Gi alpha and Gs alpha mediated pathway->Phosphorylase a;;;
+E9HGR4	DAPPUDRAFT_301194	3	1.23	1.06	-0.95	-1.25	Putative uncharacterized protein	LYSINE-SPECIFIC DEMETHYLASE LID (PTHR10694:SF8)	sequence-specific DNA binding transcription factor activity;sequence-specific DNA binding transcription factor activity	transcription from RNA polymerase II promoter		zinc finger transcription factor	
+E9GJA1	DAPPUDRAFT_304112	10	-0.98	-1.39	-1.26	-1.25	Putative uncharacterized protein	DRAB11 (PTHR24073:SF87)					
+E9H9X9	DAPPUDRAFT_299559	19	-0.08	-0.77	-1.73	-1.25	Nucleolar protein-like protein 5A	NUCLEOLAR PROTEIN 56 (PTHR10894:SF0)	RNA binding	rRNA metabolic process	ribonucleoprotein complex	ribonucleoprotein	
+E9HA01	DAPPUDRAFT_111732	21	0.27	-0.43	-1.55	-1.27	Putative uncharacterized protein	SUBFAMILY NOT NAMED (PTHR11590:SF40)					
+E9H0Z6	DAPPUDRAFT_307186	13	-0.57	-1.17	-1.55	-1.30	Putative uncharacterized protein	"NADH DEHYDROGENASE [UBIQUINONE] IRON-SULFUR PROTEIN 2, MITOCHONDRIAL (PTHR11993:SF10)"	oxidoreductase activity	oxidative phosphorylation;respiratory electron transport chain		dehydrogenase;reductase	
+E9G8G7	DAPPUDRAFT_223052	7	-0.67	-0.97	-1.19	-1.32	Putative uncharacterized protein	RAS-RELATED PROTEIN RAB-1B (PTHR24073:SF212)					
+E9H9F6	DAPPUDRAFT_327006	23	0.19	-0.84	-0.93	-1.32	Putative uncharacterized protein	MOESIN/EZRIN/RADIXIN HOMOLOG 1 (PTHR23281:SF18)	structural constituent of cytoskeleton	cellular process;cellular component organization	actin cytoskeleton;intracellular	actin family cytoskeletal protein	
+E9GMP2	DAPPUDRAFT_304937	12	0.64	0.10	-0.95	-1.32	Putative uncharacterized protein	"CALNEXIN 99A, ISOFORM C (PTHR11073:SF1)"	calcium ion binding	protein folding;intracellular protein transport;exocytosis		chaperone;calcium-binding protein	
+E9GRL8	DAPPUDRAFT_305318	18	-1.27	-1.34	-1.23	-1.34	Putative uncharacterized protein	PROTEIN CAND-1 (PTHR12696:SF0)	sequence-specific DNA binding transcription factor activity;sequence-specific DNA binding transcription factor activity	transcription from RNA polymerase II promoter		transcription factor	
+E9HF12	DAPPUDRAFT_300874	23	-0.48	-1.38	-1.69	-1.34	Putative uncharacterized protein	"LEUCINE--TRNA LIGASE, CYTOPLASMIC (PTHR11946:SF51)"	aminoacyl-tRNA ligase activity	translation		aminoacyl-tRNA synthetase	
+E9G2A6	DAPPUDRAFT_127463	33	-0.03	-0.74	-1.05	-1.35	Putative uncharacterized protein	FI05224P (PTHR11451:SF22)	ligase activity	tRNA metabolic process;protein metabolic process		ligase	
+E9GMB1	DAPPUDRAFT_244975	15	-0.66	-1.37	-1.22	-1.35	Putative uncharacterized protein	ATP-DEPENDENT RNA HELICASE DDX6-RELATED (PTHR24031:SF76)	RNA helicase activity;translation initiation factor activity;translation initiation factor activity;translation initiation factor activity	nucleobase-containing compound metabolic process;translation;regulation of translation		RNA helicase;translation initiation factor;helicase	
+E9FTY4	DAPPUDRAFT_303048	9	-0.47	-1.42	-1.53	-1.35	Putative uncharacterized protein	26S PROTEASOME NON-ATPASE REGULATORY SUBUNIT 13 (PTHR10539:SF0)	catalytic activity;protein binding;enzyme regulator activity	proteolysis;regulation of catalytic activity		enzyme modulator	Cell cycle->Proteasome;;Parkinson disease->19S proteasome;;Ubiquitin proteasome pathway->26S proteasome;;;;
+E9FXJ7	DAPPUDRAFT_234839	16	-0.09	-1.09	-0.09	-1.36	Hemoglobin	"GLOBIN 1, ISOFORM A (PTHR11442:SF36)"					
+E9FSQ9	DAPPUDRAFT_310174	4	0.46	-0.33	-2.05	-1.37	Putative uncharacterized protein	40S RIBOSOMAL PROTEIN S25 (PTHR12850:SF5)					
+E9G1G4	DAPPUDRAFT_307738	3	-0.16	-1.16	-1.08	-1.37	Putative uncharacterized protein	SIGNAL PEPTIDASE COMPLEX SUBUNIT 3 (PTHR12804:SF0)	peptidase activity	proteolysis		protease;protease	Vasopressin synthesis->Signal Peptidase;;
+E9GD42	DAPPUDRAFT_316498	6	-0.37	-0.80	-0.10	-1.38	Putative uncharacterized protein	HEMATOPOIETIC PROSTAGLANDIN D SYNTHASE (PTHR11571:SF118)					
+E9G6C5	DAPPUDRAFT_238417	4	1.46	0.26	-1.49	-1.39	Putative uncharacterized protein						
+E9GER2	DAPPUDRAFT_223934	19	-0.86	-1.32	-2.06	-1.44	Putative uncharacterized protein	EUKARYOTIC TRANSLATION INITIATION FACTOR 3 SUBUNIT L (PTHR13242:SF0)	translation initiation factor activity;translation initiation factor activity;translation initiation factor activity	translation;protein folding;regulation of translation		translation initiation factor	
+E9GCK2	DAPPUDRAFT_302344	20	-0.35	-1.50	-1.48	-1.44	Glucose-6-phosphate isomerase	GLUCOSE-6-PHOSPHATE ISOMERASE (PTHR11469:SF4)	isomerase activity	glycolysis;gluconeogenesis;glycolysis		isomerase	Pentose phosphate pathway->Glucose-P-Isomerase;;Glycolysis->Phosphoglucose isomerase;;;
+E9GA58	DAPPUDRAFT_299767	8	0.13	-0.91	-1.19	-1.44	Mago nashi-like protein	PROTEIN MAGO NASHI HOMOLOG (PTHR12638:SF0)		nucleobase-containing compound metabolic process;RNA localization			
+E9GX17	DAPPUDRAFT_231213	7	0.12	-0.90	-1.32	-1.45	Putative uncharacterized protein	NADH DEHYDROGENASE [UBIQUINONE] 1 ALPHA SUBCOMPLEX SUBUNIT 6 (PTHR12964:SF0)	oxidoreductase activity	oxidative phosphorylation;respiratory electron transport chain		dehydrogenase	
+E9GEY1	DAPPUDRAFT_302804	12	0.30	-0.98	-1.56	-1.46	Eukaryotic translation initiation factor 3 subunit E	EUKARYOTIC TRANSLATION INITIATION FACTOR 3 SUBUNIT E (PTHR10317:SF0)	translation initiation factor activity;translation initiation factor activity;translation initiation factor activity	translation;regulation of translation		translation initiation factor	
+E9FU59	DAPPUDRAFT_303071	23	0.15	-0.96	-1.44	-1.48	Putative uncharacterized protein	40S RIBOSOMAL PROTEIN S3A (PTHR11830:SF0)	structural constituent of ribosome;nucleic acid binding	translation		ribosomal protein	
+E9GDV9	DAPPUDRAFT_49070	11	0.08	-0.88	-0.49	-1.51	Putative uncharacterized protein	CYTOSOLIC SULFOTRANSFERASE 1-RELATED (PTHR11783:SF15)	transferase activity	sulfur compound metabolic process		transferase	
+E9HP73	DAPPUDRAFT_116378	15	0.63	-0.23	-1.47	-1.52	Putative uncharacterized protein			peptide cross-linking			
+E9H8M2	DAPPUDRAFT_442506	26	-0.54	-0.58	-1.58	-1.58	Piwi/Aubergine-like protein variant 1	PIWI-LIKE PROTEIN 1 (PTHR22892:SF32)					
+E9G153	DAPPUDRAFT_230473	11	-1.08	-1.52	-1.17	-1.62	Beta subunit of putative Na+/K+ ATPase	AT04468P-RELATED (PTHR11523:SF22)					
+E9G064	DAPPUDRAFT_43721	15	-0.67	-1.45	-2.60	-1.64	Putative uncharacterized protein	PUMILIO DOMAIN-CONTAINING PROTEIN KIAA0020 (PTHR13389:SF0)					
+E9H1V2	DAPPUDRAFT_307387	12	-0.76	-1.01	-1.92	-1.65	Putative glycogen synthase	GLYCOGEN [STARCH] SYNTHASE-RELATED (PTHR10176:SF0)	"transferase activity, transferring glycosyl groups"	glycogen metabolic process		glycosyltransferase	
+E9GBH6	DAPPUDRAFT_230714	11	-0.17	-1.18	-2.28	-1.67	Putative uncharacterized protein	40S RIBOSOMAL PROTEIN S11 (PTHR10744:SF9)	structural constituent of ribosome;nucleic acid binding	translation		ribosomal protein	
+E9G6B6	DAPPUDRAFT_222816	5	0.31	-1.11	-1.61	-1.72	Putative uncharacterized protein	TRANSMEMBRANE EMP24 DOMAIN-CONTAINING PROTEIN 10 (PTHR22811:SF58)		intracellular protein transport	vesicle coat;cytoplasm	transfer/carrier protein;vesicle coat protein	
+E9G6S7	DAPPUDRAFT_99108	3	-1.08	-1.32	-1.70	-1.72	Putative uncharacterized protein	PROTEIN DPY-11 (PTHR18929:SF81)	protein disulfide isomerase activity	protein folding;cellular protein modification process		isomerase	
+E9GAM5	DAPPUDRAFT_240002	13	-0.74	-1.14	-1.61	-1.77	"6-phosphogluconate dehydrogenase, decarboxylating"	"6-PHOSPHOGLUCONATE DEHYDROGENASE, DECARBOXYLATING (PTHR11811:SF25)"	oxidoreductase activity	pentose-phosphate shunt		dehydrogenase	Pentose phosphate pathway->Gluconate Dehydrogenase;;
+E9FZ54	DAPPUDRAFT_92111	3	0.53	-0.44	-2.96	-1.77	Putative uncharacterized protein	40S RIBOSOMAL PROTEIN S26-RELATED (PTHR12538:SF0)	structural constituent of ribosome;nucleic acid binding	translation		ribosomal protein	
+E9H6N4	DAPPUDRAFT_227411	15	-0.49	-1.79	-2.25	-1.78	Putative uncharacterized protein	26S PROTEASOME NON-ATPASE REGULATORY SUBUNIT 3 (PTHR10758:SF2)	catalytic activity;protein binding;enzyme activator activity	proteolysis;regulation of catalytic activity		enzyme modulator	Cell cycle->Proteasome;;Ubiquitin proteasome pathway->26S proteasome;;;
+E9HRX9	DAPPUDRAFT_303621	13	0.52	-0.57	-1.32	-1.79	Putative uncharacterized protein	SUBFAMILY NOT NAMED (PTHR13711:SF174)	sequence-specific DNA binding transcription factor activity;sequence-specific DNA binding transcription factor activity;chromatin binding;receptor binding	transcription from RNA polymerase II promoter;cell communication;regulation of transcription from RNA polymerase II promoter;chromatin organization		HMG box transcription factor;signaling molecule;chromatin/chromatin-binding protein	
+E9GCI5	DAPPUDRAFT_316317	7	-0.89	-1.38	-0.99	-1.79	Hemoglobin	NEUROGLOBIN (PTHR22924:SF30)	transmembrane transporter activity	transport		transporter	
+E9HJT8	DAPPUDRAFT_301703	5	2.50	-0.29	-2.39	-1.83	Putative uncharacterized protein	40S RIBOSOMAL PROTEIN S17-RELATED (PTHR10732:SF0)		biosynthetic process;translation;cellular process;organelle organization;cellular component biogenesis	ribosome;organelle;cytosol	ribosomal protein	
+E9HCT5	DAPPUDRAFT_217307	19	-0.54	-1.16	-2.13	-1.83	Putative uncharacterized protein	"VALYL-TRNA SYNTHETASE, ISOFORM A (PTHR11946:SF5)"	aminoacyl-tRNA ligase activity	translation		aminoacyl-tRNA synthetase	
+E9GN01	DAPPUDRAFT_304921	7	-0.46	-1.66	-2.04	-1.88	Putative uncharacterized protein	DOLICHOL-PHOSPHATE MANNOSYLTRANSFERASE (PTHR10859:SF37)	"transferase activity, transferring glycosyl groups"	carbohydrate metabolic process;protein glycosylation		glycosyltransferase	
+E9FX66	DAPPUDRAFT_305659	64	-1.28	-1.53	-2.89	-1.91	Putative uncharacterized protein	CYTOPLASMIC DYNEIN 1 HEAVY CHAIN 1 (PTHR10676:SF28)	microtubule motor activity;structural constituent of cytoskeleton	metabolic process;cellular component movement;mitosis;chromosome segregation;intracellular protein transport;vesicle-mediated transport;cellular component organization	microtubule;cytoskeleton;intracellular	hydrolase;microtubule binding motor protein	Huntington disease->Dynein complex;;
+C7DR07	DAPPUDRAFT_213873	11	-0.20	-0.66	-2.23	-1.93	Putative uncharacterized protein	PROTEIN Y7A5A.1 (PTHR10801:SF2)	oxidoreductase activity	cholesterol metabolic process		reductase	
+E9FWW9	DAPPUDRAFT_305634	21	-0.38	-1.32	-1.96	-1.96	Alpha subunit of putative Na+/K+ ATPase	SUBFAMILY NOT NAMED (PTHR24093:SF244)	hydrolase activity;ion channel activity;cation transmembrane transporter activity	metabolic process;cation transport;cellular calcium ion homeostasis		cation transporter;ion channel;hydrolase	
+E9FSV8	DAPPUDRAFT_190546	11	-0.28	-1.65	-1.26	-2.00	Putative uncharacterized protein	GDP-L-FUCOSE SYNTHASE (PTHR10366:SF259)	oxidoreductase activity;hydro-lyase activity;racemase and epimerase activity	glycogen metabolic process;cholesterol metabolic process		oxidoreductase;dehydratase;epimerase/racemase	
+E9GEV7	DAPPUDRAFT_302797	11	-0.42	-1.00	-1.99	-2.03	Putative uncharacterized protein	RIBOSOMAL PROTEIN S15A (PTHR11758:SF4)	structural constituent of ribosome;nucleic acid binding	translation		ribosomal protein	
+E9FYV4	DAPPUDRAFT_207455	7	-1.00	-1.22	-1.99	-2.03	Putative uncharacterized protein	PROTEIN DHS-20 (PTHR24316:SF215)	oxidoreductase activity	cellular amino acid biosynthetic process;steroid metabolic process		dehydrogenase;reductase	
+E9HR84	DAPPUDRAFT_65262	40	-1.02	-1.89	-1.81	-2.28	Putative uncharacterized protein	CALCIUM-TRANSPORTING ATPASE SARCOPLASMIC/ENDOPLASMIC RETICULUM TYPE (PTHR24093:SF163)	hydrolase activity;ion channel activity;cation transmembrane transporter activity	metabolic process;cation transport;cellular calcium ion homeostasis		cation transporter;ion channel;hydrolase	
+E9HFQ5	DAPPUDRAFT_329113	5		-1.93	-1.29	-2.31	Ubiquitin carboxyl-terminal hydrolase	SUBFAMILY NOT NAMED (PTHR24006:SF421)	cysteine-type peptidase activity;ubiquitin-protein ligase activity;mRNA binding	"RNA splicing, via transesterification reactions;mRNA splicing, via spliceosome;RNA splicing, via transesterification reactions;proteolysis"		cysteine protease;mRNA splicing factor;ubiquitin-protein ligase;cysteine protease	
+E9FTB0	DAPPUDRAFT_230160	8	-0.37	-1.40	-1.82	-2.34	Putative uncharacterized protein	GM23292P (PTHR21106:SF2)					
+E9GR53	DAPPUDRAFT_92887	11	-0.32	-1.46	-2.38	-2.38	Putative uncharacterized protein	40S RIBOSOMAL PROTEIN S2 (PTHR13718:SF4)	structural constituent of ribosome;nucleic acid binding	translation		ribosomal protein	
+E9GXZ9	DAPPUDRAFT_306714	8	0.12	-0.40	-2.02	-2.38	Putative uncharacterized protein	"SULFIDE:QUINONE OXIDOREDUCTASE, MITOCHONDRIAL (PTHR10632:SF2)"					
+E9GA02	DAPPUDRAFT_230652	6	-0.05	-0.81	-3.61	-2.47	40S ribosomal protein S24	40S RIBOSOMAL PROTEIN S24 (PTHR10496:SF0)				ribosomal protein	
+E9HM84	DAPPUDRAFT_302191	13	-0.99	-1.29	-1.92	-2.50	Putative uncharacterized protein	MITOCHONDRIAL 2-OXOGLUTARATE/MALATE CARRIER PROTEIN (PTHR24089:SF86)	amino acid transmembrane transporter activity;transmembrane transporter activity;calcium ion binding;calmodulin binding	phosphate-containing compound metabolic process;nucleobase-containing compound metabolic process;lipid metabolic process;cation transport;phosphate ion transport;lipid transport;nucleobase-containing compound transport	mitochondrial inner membrane;mitochondrion;cytoplasm	amino acid transporter;mitochondrial carrier protein;transfer/carrier protein;calmodulin	
+E9G6L8	DAPPUDRAFT_300830	7	-0.72	-2.34	-2.51	-2.54	Putative uncharacterized protein	DOLICHYL-DIPHOSPHOOLIGOSACCHARIDE--PROTEIN GLYCOSYLTRANSFERASE SUBUNIT STT3A (PTHR13872:SF21)	"transferase activity, transferring glycosyl groups"	protein glycosylation		glycosyltransferase	
+E9GB46	DAPPUDRAFT_230702	5	-0.14	-1.44	-2.86	-2.57	Putative uncharacterized protein	60S RIBOSOMAL PROTEIN L28 (PTHR10544:SF0)	structural constituent of ribosome;nucleic acid binding	translation		ribosomal protein	
+E9G6K9	DAPPUDRAFT_34614	10	0.22	-1.82	-3.04	-2.62	Putative uncharacterized protein (Fragment)	60S RIBOSOMAL PROTEIN L13 (PTHR11722:SF0)	structural constituent of ribosome;nucleic acid binding	translation		ribosomal protein	
+E9GI31	DAPPUDRAFT_230889	10	-0.26	-1.29	-1.47	-2.69	Putative uncharacterized protein	CYTOCHROME C OXIDASE SUBUNIT IV ISOFORM 1 (PTHR10707:SF10)					
+E9G8L4	DAPPUDRAFT_230626	12	-0.19	-1.48	-3.05	-3.06	Putative uncharacterized protein	MIP08013P1 (PTHR24089:SF50)	amino acid transmembrane transporter activity;transmembrane transporter activity;calcium ion binding;calmodulin binding	phosphate-containing compound metabolic process;nucleobase-containing compound metabolic process;lipid metabolic process;cation transport;phosphate ion transport;lipid transport;nucleobase-containing compound transport	mitochondrial inner membrane;mitochondrion;cytoplasm	amino acid transporter;mitochondrial carrier protein;transfer/carrier protein;calmodulin	
+E9HCE1	DAPPUDRAFT_61104	3	-2.09	-3.25	-2.80	-3.11	Putative uncharacterized protein	PROTEIN F56B3.6 (PTHR12300:SF22)	receptor activity;transmembrane transporter activity	carbohydrate metabolic process;carbohydrate transport		transporter;receptor	
+E9G0H6	DAPPUDRAFT_307119	3	0.82	1.76	-1.07	-3.17	Putative uncharacterized protein						
+E9FTX7	DAPPUDRAFT_190829	11	-0.43	-1.85	-3.65	-3.26	Putative uncharacterized protein	NAT1 (PTHR22767:SF2)	acetyltransferase activity	transcription from RNA polymerase II promoter;protein acetylation;regulation of transcription from RNA polymerase II promoter		acetyltransferase	
+E9G4Z8	DAPPUDRAFT_300448	5	-1.48	-1.98	-3.00	-3.60	Putative uncharacterized protein	"TRICARBOXYLATE TRANSPORT PROTEIN, MITOCHONDRIAL (PTHR24089:SF102)"	amino acid transmembrane transporter activity;transmembrane transporter activity;calcium ion binding;calmodulin binding	phosphate-containing compound metabolic process;nucleobase-containing compound metabolic process;lipid metabolic process;cation transport;phosphate ion transport;lipid transport;nucleobase-containing compound transport	mitochondrial inner membrane;mitochondrion;cytoplasm	amino acid transporter;mitochondrial carrier protein;transfer/carrier protein;calmodulin	
+E9H230	DAPPUDRAFT_57515	3	-0.65	-2.29		-3.71	Putative uncharacterized protein	"NADH DEHYDROGENASE [UBIQUINONE] 1 BETA SUBCOMPLEX SUBUNIT 5, MITOCHONDRIAL (PTHR13178:SF0)"	oxidoreductase activity	oxidative phosphorylation;respiratory electron transport chain		oxidoreductase	
+E9I5Q2	DAPPUDRAFT_71021	4	-0.43			-4.04	Putative uncharacterized protein (Fragment)	TRANSLOCATION PROTEIN SEC62 (PTHR12443:SF9)					
+E9FV80	DAPPUDRAFT_206128	13	-0.62	-1.75	-3.92		Putative uncharacterized protein	60S RIBOSOMAL PROTEIN L3 (PTHR11363:SF5)	structural constituent of ribosome;nucleic acid binding	translation		ribosomal protein	
+E9G1N6	DAPPUDRAFT_192826	4	0.59	0.34	-4.12		Putative uncharacterized protein	"PROTEIN C13B4.1, ISOFORM A (PTHR23130:SF66)"					
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
